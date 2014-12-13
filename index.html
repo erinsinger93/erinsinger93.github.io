@@ -3,10 +3,86 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="http://cdn.foundation5.zurb.com/foundation.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	</head>
 	<body>
+		<div id="header">
+			<div class="header_image">
+			</div>
+			<div class="header_buttons">
+				<a href="#about">
+					<div class="header_button">
+						<div class="button_text auto_margin vertical_center_container">
+							ABOUT
+						</div>
+					</div>
+				</a>
+				<a href="#experience">	
+					<div class="header_button">
+						<div class="button_text auto_margin vertical_center_container">
+							EXPERIENCE
+						</div>
+					</div>
+				</a>
+				<a href="#courses">
+					<div class="header_button">
+						<div class="button_text auto_margin vertical_center_container">
+							COURSES
+						</div>
+					</div>
+				</a>
+				<a href="#contact">
+					<div class="header_button last">
+						<div class="button_text auto_margin vertical_center_container">
+							CONTACT
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+
 		<h1>Hello World</h1>
 		<p>I'm hosted with GitHub Pages.</p>
 		<a href="test.html">ehmahgerd</a>
+
+		<br /><br /><br /><br /><br /><br /><br /><br />
+
+		<a name="about">
+			<div class="tab_title">
+				babies!
+			</div>
+		</a>
+
+		<a name="experience">
+			<div class="tab_title">
+				babies!
+			</div>
+		</a>
+
+		<a name="courses">
+			<div class="tab_title">
+				babies!
+			</div>
+		</a>
+
+		<a name="contact">
+			<div class="tab_title">
+				babies!
+			</div>
+		</a>
+
+		<script>
+			$(document).ready(function(){
+				$('a[href^="#"]').on('click',function (e) {
+	    		e.preventDefault();
+	    		var target = $("a[name='" + this.hash.replace("#", "") + "'");
+	    		$('html, body').stop().animate({
+	        	'scrollTop': target.offset().top
+	    		}, 900, 'swing', function () {
+	        	window.location.hash = target;
+	    		});
+				});
+			});
+		</script>
 	</body>
 </html>

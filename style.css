@@ -1,3 +1,88 @@
 body {
-	color: red;
+	color: #333;
+	font-family: proximanova;
+}
+
+@font-face {
+	font-family: proximanova;
+	src: url("proximanova.otf") format("opentype");
+}
+
+@font-face {
+	font-family: proximanova-light;
+	src: url("proximanova-light.ttf") format("truetype");
+}
+
+a {
+	color: #333;
+}
+
+#header {
+	width: 100%;
+	height: 90%;
+  background-color: #1b040a;
+  position: relative;
+}
+
+.vertical_center_container {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+}
+
+.auto_margin {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header_image {
+	height: 100%;
+	width: 80%;
+	background-repeat: no-repeat;
+  background-image: url("erin_singer_cover.png");
+  background-image: -webkit-image-set(
+    url("erin_singer_cover.png")    1x,
+    url("erin_singer_cover@2x.png") 2x
+  );
+  background-size: cover;
+}
+
+.header_buttons {
+	position: absolute;
+	font-family: proximanova-light;
+	font-size: 1.5em;
+	color: #ffffff;
+	top: 0;
+	right: 0;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+}
+
+.header_buttons a {
+	color: #fff;
+}
+
+.header_button {
+	position: relative;
+	height: 25%;
+	width: 100%;
+	border-bottom: 1px solid #333;
+}
+
+.header_button:hover {
+	background-color: #333;
+}
+
+.button_text {
+	width: 90%;
+}
+
+.last {
+	border-bottom: none;
+}
+
+.tab_title:hover {
+	color: #333;
+	cursor: default;
 }
