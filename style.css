@@ -1,6 +1,8 @@
 body {
 	color: #333;
-	font-family: proximanova;
+	font-family: proximanova !important;
+	background-color: #ccc;
+	overflow: auto;
 }
 
 @font-face {
@@ -20,14 +22,36 @@ a {
 #header {
 	width: 100%;
 	height: 90%;
+	z-index: 1;
   background-color: #1b040a;
   position: relative;
+  box-shadow: 0px 3px 8px #333;
+}
+
+#mobile-header {
+	display: none;
 }
 
 .vertical_center_container {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.large {
+	font-size: 2.75em;
+}
+
+.light {
+	font-family: proximanova-light !important;
 }
 
 .auto_margin {
@@ -49,7 +73,6 @@ a {
 
 .header_buttons {
 	position: absolute;
-	font-family: proximanova-light;
 	font-size: 1.5em;
 	color: #ffffff;
 	top: 0;
@@ -59,8 +82,43 @@ a {
 	text-align: center;
 }
 
+@media (max-width : 899px) {
+	body {
+		font-size: 0.9em;
+	}
+
+	#header {
+		display: none;
+	}
+
+	#mobile-header {
+		display: block;
+	}
+
+	.about_text {
+		width: 100% !important;
+	}
+
+	.profile_container {
+		position: none;
+	}
+
+	.profile_image {
+		display: none;
+	}
+
+	.mobile_profile_image {
+		display: block !important;
+	}
+}
+
+@media (min-width: 900px) {
+
+}
+
 .header_buttons a {
 	color: #fff;
+	text-decoration: none;
 }
 
 .header_button {
@@ -82,7 +140,70 @@ a {
 	border-bottom: none;
 }
 
-.tab_title:hover {
-	color: #333;
+.title {
+	font-size: 2.75em;
+}
+
+.section:hover {
 	cursor: default;
+}
+
+.section {
+	padding: 5%;
+	overflow: auto;
+}
+
+.about {
+	background-color: #923a4e;
+	color: #fff;
+	text-shadow: 2px 2px 3px #762F3F;
+	box-shadow: 0px 2px 5px #767575;
+	z-index: 0;
+}
+
+.about:hover {
+	color: #fff;
+}
+
+.experience {
+	box-shadow: 0px 2px 2px #767575;
+	background-repeat: no-repeat;
+  background-image: url("texture_background.png");
+  background-image: -webkit-image-set(
+    url("texture_background.png")    1x,
+    url("texture_background@2x.png") 2x
+  );
+  background-size: cover;
+}
+
+.about_text {
+	width: 60%;
+	height: 100%;
+	float: left;
+	text-shadow: 1px 1px 1px #762F3F;
+}
+
+.profile_container {
+	width: 30%;
+	height: 100%;
+	top: 0;
+	right: 5%;
+	position: absolute;
+}
+
+.mobile_profile_image {
+	display: none;
+	width: 60%;
+	border: 2px solid #762F3F;
+}
+
+.full {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.profile_image {
+	border: 2px solid #762F3F;
+	max-width: 90%;
 }
