@@ -30,6 +30,44 @@ a {
 
 #mobile-header {
 	display: none;
+  z-index: 1;
+  box-shadow: 0px 3px 8px #333;
+}
+
+#mobile-header-buttons {
+	width: 100%;
+	font-size: 1.2em;
+  background-color: #1b040a;
+  box-shadow: 0px 3px 8px #333;
+  position: relative;
+}
+
+.mobile_button {
+	text-align: center;
+	color: #fff;
+}
+
+#mobile-header-buttons a {
+	text-decoration: none !important;
+}
+
+.mobile_button1 {
+	width: 25%;
+	border-right: 2px solid #333;
+}
+.mobile_button2 {
+	left: 25%;
+	width: 25%;
+	border-right: 2px solid #333;
+}
+.mobile_button3 {
+	left: 50%;
+	width: 25%;
+	border-right: 2px solid #333;
+}
+.mobile_button4 {
+	left: 75%;
+	width: 25%;
 }
 
 .vertical_center_container {
@@ -82,38 +120,62 @@ a {
 	text-align: center;
 }
 
-@media (max-width : 899px) {
-	body {
-		font-size: 0.9em;
-	}
 
+@media only screen and (min-device-width : 200px) and (max-device-width : 899px) and (orientation : portrait) { 
+	body {
+		font-size: 2.0em;
+	}
 	#header {
 		display: none;
 	}
-
 	#mobile-header {
 		display: block;
 	}
-
+	#mobile-header-buttons {
+		height: 200px;
+		font-size: 1.2em;
+		font-family: proximanova !important;
+	}
+	.mobile_buttons {
+		height: 200px;
+	}
+	.mobile_profile_image {
+		display: block !important;
+		max-width: 400px;
+	}
+	.profile_container {
+		display: none;
+	}
 	.about_text {
 		width: 100% !important;
 	}
-
-	.profile_container {
-		position: none;
-	}
-
-	.profile_image {
-		display: none;
-	}
-
-	.mobile_profile_image {
-		display: block !important;
-	}
 }
 
-@media (min-width: 900px) {
-
+@media (max-width : 899px) { 
+	#header {
+		display: none;
+	}
+	#mobile-header {
+		display: block;
+	}
+	#mobile-header-buttons {
+		height: 150px;
+		font-size: 1.5em;
+		font-family: proximanova-light !important;
+	}
+	.mobile_buttons {
+		height: 150px;
+	}
+	.mobile_profile_image {
+		display: block !important;
+		max-width: 200px;
+	}
+	.profile_container {
+		display: none;
+	}
+	.about_text {
+		width: 100% !important;
+	}
 }
 
 .header_buttons a {
@@ -158,7 +220,6 @@ a {
 	color: #fff;
 	text-shadow: 2px 2px 3px #762F3F;
 	box-shadow: 0px 2px 5px #767575;
-	z-index: 0;
 }
 
 .about:hover {
@@ -193,7 +254,7 @@ a {
 
 .mobile_profile_image {
 	display: none;
-	width: 60%;
+	height: auto;
 	border: 2px solid #762F3F;
 }
 
