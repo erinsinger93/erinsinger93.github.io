@@ -20,7 +20,7 @@ a {
 }
 
 p {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-family: proximanova-light;
 }
 
@@ -30,13 +30,13 @@ p {
 	z-index: 1;
   background-color: #1b040a;
   position: relative;
-  box-shadow: 0px 3px 8px #333;
+  box-shadow: 0px 3px 8px #572430;
 }
 
 #mobile-header {
 	display: none;
   z-index: 1;
-  box-shadow: 0px 3px 8px #333;
+  box-shadow: 0px 3px 8px #572430;
 }
 
 #mobile-header-buttons {
@@ -55,6 +55,10 @@ p {
 
 #mobile-header-buttons a {
 	text-decoration: none !important;
+}
+
+.medium_margin_bottom {
+	margin-bottom: 25px;
 }
 
 .mobile_button1 {
@@ -205,6 +209,12 @@ p {
 	.little_card {
 		height: 300px !important;
 	}
+	.small_footer {
+		display: none !important;
+	}
+	.big_footer {
+		display: block !important;
+	}
 }
 
 @media (max-width : 899px) { 
@@ -314,6 +324,7 @@ p {
 }
 
 .experience {
+	box-shadow: 0px 2px 5px #ABAAAA;
 	background-repeat: no-repeat;
   background-image: url("texture_background.png");
   background-image: -webkit-image-set(
@@ -381,7 +392,6 @@ p {
 	height: 300px;
 	width: auto;
 	bottom: 0;
-	/*box-shadow: 0px 2px 1px #767575;*/
 }
 
 .list_border {
@@ -414,12 +424,16 @@ p {
 	margin-bottom: 5px;
 }
 
-.experience a {
-	text-decoration: none;
+.experience_footer {
+	margin-top: 10px;
 }
 
-.courses {
-	box-shadow: 0px -2px 8px #767575;
+.experience_link:hover {
+	color:#923a4e
+}
+
+.experience a {
+	text-decoration: none;
 }
 
 .course_list {
@@ -460,7 +474,7 @@ p {
 
 .little_card {
 	height: 200px;
-	margin-top: 35px;
+	margin-bottom: 35px;
 	width: 70%;
 	padding: 2% 10%;
 	background-color: #E8E8E8;
@@ -469,5 +483,27 @@ p {
 
 .contact {
 	background-color: #1b040a;
-	color: #fff;
+	color: #fff !important;
+	padding: 3% 5%;
+}
+
+.contact a {
+	color: #fff !important;
+	text-decoration: none;
+}
+
+.footer {
+	font-size: 1.2em;
+}
+
+.big_footer {
+	display: none;
+}
+
+.fa-mobile {
+	font-size: 1.3em;
+}
+
+.dot {
+	padding: 0% 2%;
 }
