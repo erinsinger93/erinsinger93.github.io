@@ -19,6 +19,11 @@ a {
 	color: #333;
 }
 
+p {
+	font-size: 1.2em;
+	font-family: proximanova-light;
+}
+
 #header {
 	width: 100%;
 	height: 90%;
@@ -69,6 +74,10 @@ a {
 .mobile_button4 {
 	left: 75%;
 	width: 25%;
+}
+
+.centered {
+	text-align: center;
 }
 
 .vertical_center_container {
@@ -130,6 +139,13 @@ a {
 	body {
 		font-size: 2.0em;
 	}
+	p {
+		font-size: 1.2em;
+		font-family: proximanova !important;
+	}
+	.section {
+		padding: 5% 5% !important;
+	}
 	#header {
 		display: none;
 	}
@@ -145,12 +161,18 @@ a {
 		height: 200px;
 	}
 	.mobile_profile_image {
-		display: block !important;
 		max-width: 400px;
 	}
-	.experience_image {
+	.mobile_picture_section {
+		display: block !important;
+	}
+	.tutera_image {
 		margin-top: 50px;
 		height: 500px !important;
+	}
+	.beamit_mobile {
+		padding-right: 4%;
+		height: 300px !important;
 	}
 	.mobile_experience_image {
 		display: block !important;
@@ -166,6 +188,9 @@ a {
 	}
 	.about_text {
 		width: 100% !important;
+		margin-left: 0 !important;
+		padding-left: 0 !important;
+		border-left: 	none !important;
 	}
 }
 
@@ -185,11 +210,17 @@ a {
 		height: 150px;
 	}
 	.mobile_profile_image {
-		display: block !important;
 		max-width: 200px;
 	}
-	.experience_image {
+	.mobile_picture_section {
+		display: block !important;
+	}
+	.tutera_image {
 		margin-top: 30px;
+	}
+	.beamit_mobile {
+		padding-right: 4%;
+		height: 150px !important;
 	}
 	.mobile_experience_image {
 		display: block !important;
@@ -205,6 +236,9 @@ a {
 	}
 	.about_text {
 		width: 100% !important;
+		margin-left: 0 !important;
+		padding-left: 0 !important;
+		border-left: 	none !important;
 	}
 }
 
@@ -241,7 +275,7 @@ a {
 }
 
 .section {
-	padding: 5%;
+	padding: 5% 12% ;
 	overflow: auto;
 }
 
@@ -257,7 +291,6 @@ a {
 }
 
 .experience {
-	box-shadow: 0px 2px 2px #767575;
 	background-repeat: no-repeat;
   background-image: url("texture_background.png");
   background-image: -webkit-image-set(
@@ -268,8 +301,10 @@ a {
 }
 
 .about_text {
-	width: 60%;
 	height: 100%;
+	margin-left: 250px;
+	padding-left: 50px;
+	border-left: 	1px solid #762F3F;
 	float: left;
 	text-shadow: 1px 1px 1px #762F3F;
 }
@@ -278,16 +313,22 @@ a {
 	color: #fff;
 }
 
+.weird_margin {
+	margin-bottom: -5px;
+}
+
 .profile_container {
-	width: 30%;
+	width: 200px;
 	height: 100%;
 	top: 0;
-	right: 5%;
 	position: absolute;
 }
 
-.mobile_profile_image {
+.mobile_picture_section {
 	display: none;
+}
+
+.mobile_profile_image {
 	height: auto;
 	border: 2px solid #762F3F;
 }
@@ -300,14 +341,20 @@ a {
 
 .profile_image {
 	border: 2px solid #762F3F;
-	max-width: 80%;
+	max-width: 200px;
+}
+
+.fa-angle-right {
+	margin-top: -1px;
+	margin-left: 5px;
+	font-size: 1.5em;
 }
 
 .mobile_experience_image {
 	display: none;
 }
 
-.experience_image {
+.tutera_image {
 	height: 300px;
 	width: auto;
 	bottom: 0;
@@ -316,6 +363,9 @@ a {
 
 .experience_box {
 	margin-bottom: 35px;
+}
+
+.list_border {
 	border-bottom: 1px solid #c2c2c2;
 }
 
@@ -327,8 +377,13 @@ a {
 	position: absolute;
 }
 
+.beamit_image {
+	right: 2% !important;
+}
+
 .experience_text {
 	width: 60%;
+	padding-bottom: 25px;
 }
 
 .experience_timeline {
@@ -341,4 +396,13 @@ a {
 
 .experience a {
 	text-decoration: none;
+}
+
+.courses {
+	box-shadow: 0px -2px 8px #767575;
+}
+
+.contact {
+	background-color: #1b040a;
+	color: #fff;
 }
