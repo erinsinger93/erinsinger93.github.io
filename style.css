@@ -143,6 +143,9 @@ p {
 		font-size: 1.2em;
 		font-family: proximanova !important;
 	}
+	.mobile_center {
+		text-align: center !important;
+	}
 	.section {
 		padding: 5% 5% !important;
 	}
@@ -172,6 +175,7 @@ p {
 	}
 	.beamit_mobile {
 		padding-right: 4%;
+		margin-bottom: 20px !important;
 		height: 300px !important;
 	}
 	.mobile_experience_image {
@@ -192,11 +196,23 @@ p {
 		padding-left: 0 !important;
 		border-left: 	none !important;
 	}
+	.big_list {
+		display: none !important;
+	}
+	.little_list {
+		display: block !important;
+	}
+	.little_card {
+		height: 300px !important;
+	}
 }
 
 @media (max-width : 899px) { 
 	#header {
 		display: none;
+	}
+	.mobile_center {
+		text-align: center !important;
 	}
 	#mobile-header {
 		display: block;
@@ -220,6 +236,7 @@ p {
 	}
 	.beamit_mobile {
 		padding-right: 4%;
+		margin-bottom: 20px !important;
 		height: 150px !important;
 	}
 	.mobile_experience_image {
@@ -239,6 +256,12 @@ p {
 		margin-left: 0 !important;
 		padding-left: 0 !important;
 		border-left: 	none !important;
+	}
+	.big_list {
+		display: none !important;
+	}
+	.little_list {
+		display: block !important;
 	}
 }
 
@@ -380,7 +403,7 @@ p {
 
 .experience_text {
 	width: 60%;
-	padding-bottom: 25px;
+	padding-bottom: 15px;
 }
 
 .experience_timeline {
@@ -397,6 +420,51 @@ p {
 
 .courses {
 	box-shadow: 0px -2px 8px #767575;
+}
+
+.course_list {
+	height: 175px;
+	margin-bottom: 20px;
+}
+
+.col2 {
+	left: 35%;
+}
+
+.col3 {
+	left: 70%;
+}
+
+.class_title {
+	line-height: 1.5em;
+}
+
+.class_description {
+	line-height: 1.2em;
+}
+
+.course_col {
+	height: 175px;
+	width: 30%;
+	padding: 5%;
+	display: inline-block;
+	margin-bottom: 5px;
+	line-height: 1.2em;
+	background-color: #E8E8E8;
+	box-shadow: 2px 2px 2px #B6B6B6;
+}
+
+.little_list {
+	display: none;
+}
+
+.little_card {
+	height: 200px;
+	margin-top: 35px;
+	width: 70%;
+	padding: 2% 10%;
+	background-color: #E8E8E8;
+	box-shadow: 2px 2px 2px #B6B6B6;
 }
 
 .contact {
