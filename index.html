@@ -3,7 +3,7 @@
 	<head>
 		<!-- <link rel="stylesheet" type="text/css" href="http://cdn.foundation5.zurb.com/foundation.css"> -->
 		<link rel="stylesheet" type="text/css" href="zurb_foundation.css">
-
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	</head>
@@ -73,43 +73,68 @@
 
 		<a name="about"></a>
 			<div class="section about relative">	
+				<div class="profile_container">
+					<div class="vertical_center_container">
+						<img class="profile_image" src="profile_img.png" />
+						<div class="centered">
+							<div class="light medium weird_margin">ERIN SINGER</div>
+							<a href="ResumeFinal-Fall2014.pdf" class="light">MY RESUME <i class="fa fa-angle-right absolute"></i></a>
+						</div>
+					</div>
+				</div>
 				<span class="about_text">
-					<div class="title light">
+					<div class="title light mobile_center">
 						ABOUT
 					</div>
 					<div>
 						<p>
-							<img class="mobile_profile_image" src="profile_img.png" align="right" />
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in purus mollis, malesuada quam eu, scelerisque mi. Sed purus felis, dictum id mi eget, suscipit bibendum urna. In congue in enim sit amet suscipit. Quisque in consequat odio, at aliquam mi. Nunc sollicitudin tristique consectetur. Proin dapibus ac nulla eget sollicitudin. Etiam commodo ante turpis, ut vulputate purus hendrerit sed. Sed posuere dui orci, vel congue purus ornare elementum. Maecenas arcu lorem, interdum vel elementum vitae, aliquam ac neque. Praesent rutrum sapien ac sapien sollicitudin, in congue eros fermentum. Integer nec ipsum finibus, tincidunt enim sit amet, iaculis metus. Morbi at eros ultricies, eleifend purus at, semper orci. Vivamus eget venenatis lectus, at commodo eros.
+							I am a junior at Stanford University studying Computer Science with a concentration in Human-Computer Interaction. Maybe it all began with building elaborate sand castles on the beaches of San Diego close to where I grew up, but I've always loved to create & design.<br/><br/>Before falling in love with Computer Science, I studied Neuroscience and Psychology and learned to appreciate how our brains help us perceive the world-- including design. This knowledge now plays an integral role in my design process.<br/><br/>When I'm not programming and designing, I like to play retro videogames, watch Marvel movies, and listen to 80s music.
 						</p>
-						<a href="ResumeFinal-Fall2014.pdf">My Resume</a>
 					</div>
 				</span>
-				<div class="profile_container">
-					<div class="full">
-						<img class="profile_image vertical_center_container" src="profile_img.png" />
+				<div class="mobile_picture_section centered">
+					<img class="mobile_profile_image" src="profile_img.png"/>
+					<div class="centered">
+						<div class="light medium weird_margin">ERIN SINGER</div>
+						<a href="ResumeFinal-Fall2014.pdf" class="light">MY RESUME <i class="fa fa-angle-right absolute"></i></a>
 					</div>
 				</div>
 			</div>
 
 		<a name="experience">
 			<div class="section experience">	
-				<div class="title light">
+				<div class="title light mobile_center">
 					EXPERIENCE
 				</div>
-				<div class="experience_box">
+				<div class="experience_box list_border relative">
 					<div class="experience_text">
 						<p>
 							<div class="experience_header">
 								<a href="https://www.tutera.co" class=" medium">TUTERA</a> 
 								<span class="medium light">&nbsp; | &nbsp;</span>
-								<span class="experience_timeline light">SEPT 2014 - CURRENT</span>
+								<span class="experience_timeline light">SEPT 2014 - PRESENT</span>
 							</div>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in purus mollis, malesuada quam eu, scelerisque mi. Sed purus felis, dictum id mi eget, suscipit bibendum urna. In congue in enim sit amet suscipit. Quisque in consequat odio, at aliquam mi. Nunc sollicitudin tristique consectetur. Proin dapibus ac nulla eget sollicitudin. Etiam commodo ante turpis, ut vulputate purus hendrerit sed. Sed posuere dui orci, vel congue purus ornare elementum. Maecenas arcu lorem, interdum vel elementum vitae, aliquam ac neque. Praesent rutrum sapien ac sapien sollicitudin, in congue eros fermentum. Integer nec ipsum finibus, tincidunt enim sit amet, iaculis metus. Morbi at eros ultricies, eleifend purus at, semper orci. Vivamus eget venenatis lectus, at commodo eros.
+							Tutera is a mobile-optimized webapp that aims to radically simplify the tutoring experience by streamlining the process from finding and meeting with a tutor to dealing with payment and feedback. I am the primary designer and front-end developer for Tutera. Though Tutera was originally designed for a Stanford course on Human-Computer Interaction, my team of four went above and beyond to almost fully implement an interface that is complete with a back-end. Screenshots of all pages I helped design can be found <a href="https://www.flickr.com/photos/128269891@N07/sets/72157648849050539/" class="experience_link">HERE.</a><br/>
+							<div class="experience_footer">
+								<a href="http://stanford.edu/class/cs147/projects/learning/tutera/" class="experience_link">
+									LINK TO PROJECT SITE
+								</a>
+								<span>&nbsp; | &nbsp;</span>
+								<a href="https:www.tutera.co" class="experience_link">
+									LINK TO DEMO
+								</a>
+							</div>
+
 						</p>
 					</div>
+					
+					<div class="experience_image_container">
+						<img class="tutera_image absolute" src="iPhoneTuteraMockup.png" />
+					</div>
+					<img class="mobile_experience_image auto_margin tutera_image" src="iPhoneTuteraMockup.png" />					
 				</div>
-				<div class="experience_box">
+
+				<div class="experience_box relative">
 					<div class="experience_text">	
 						<p>
 							<div class="experience_header">
@@ -117,31 +142,246 @@
 								<span class="medium light">&nbsp; | &nbsp;</span>
 								<span class="experience_timeline light">APRIL 2014 - SEPT 2014</span>
 							</div>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in purus mollis, malesuada quam eu, scelerisque mi. Sed purus felis, dictum id mi eget, suscipit bibendum urna. In congue in enim sit amet suscipit. Quisque in consequat odio, at aliquam mi. Nunc sollicitudin tristique consectetur. Proin dapibus ac nulla eget sollicitudin. Etiam commodo ante turpis, ut vulputate purus hendrerit sed. Sed posuere dui orci, vel congue purus ornare elementum. Maecenas arcu lorem, interdum vel elementum vitae, aliquam ac neque. Praesent rutrum sapien ac sapien sollicitudin, in congue eros fermentum. Integer nec ipsum finibus, tincidunt enim sit amet, iaculis metus. Morbi at eros ultricies, eleifend purus at, semper orci. Vivamus eget venenatis lectus, at commodo eros.
+							Recently acquired by Yahoo, Cooliris develops photo viewing products for both mobile and web platforms. When I began working for Cooliris mid-sophomore year, Cooliris was in the process of creating the app BeamIt. BeamIt is a photo messaging app that allows users to send up to thousands of high resolution photos at one time in private or group messages. I helped style the web application of BeamIt (now in beta) and helped build the website promoting the IOS application of Beamit. Screenshots of some of these contributions can be found <a href="https://www.flickr.com/photos/128269891@N07/sets/72157648857405468/" class="experience_link">HERE.</a>
+							<br/>
+							<div class="experience_footer">
+								<a href="https://www.cooliris.com/cooliris-app/" class="experience_link">
+									LINK TO COOLIRIS SITE
+								</a>
+								<span>&nbsp; | &nbsp;</span>
+								<a href="https://beamitapp.com/" class="experience_link">
+									LINK TO BEAMIT SITE
+								</a>
+							</div>
 						</p>
 					</div>
+					<div class="experience_image_container beamit_image">
+						<img class="vertical_center_container absolute" src="beamit-app.png" />
+					</div>
+					<img class="mobile_experience_image beamit_mobile auto_margin experience_image" src="beamit-app.png" />
 				</div>
 			</div>
 		</a>
 
 		<a name="courses">
 			<div class="section courses">	
-				<div class="title light">
+				<div class="title medium_margin_bottom light mobile_center ">
 					COURSES
 				</div>
-			<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in purus mollis, malesuada quam eu, scelerisque mi. Sed purus felis, dictum id mi eget, suscipit bibendum urna. In congue in enim sit amet suscipit. Quisque in consequat odio, at aliquam mi. Nunc sollicitudin tristique consectetur. Proin dapibus ac nulla eget sollicitudin. Etiam commodo ante turpis, ut vulputate purus hendrerit sed. Sed posuere dui orci, vel congue purus ornare elementum. Maecenas arcu lorem, interdum vel elementum vitae, aliquam ac neque. Praesent rutrum sapien ac sapien sollicitudin, in congue eros fermentum. Integer nec ipsum finibus, tincidunt enim sit amet, iaculis metus. Morbi at eros ultricies, eleifend purus at, semper orci. Vivamus eget venenatis lectus, at commodo eros.
-				</p>
+				<div class="big_list auto_margin relative">
+					<div class="course_list">
+						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs+147%3A+introduction+to+human+computer+interaction+design&collapse=">
+							<div class="course_col col1 centered">
+								<span class="medium class_title">CS147</span>
+								<br/>
+								Intro to Human-Computer Interaction & Design
+							</div>
+						</a>
+						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs+142%3A+web+applications&collapse=">	
+							<div class="course_col col2 absolute centered">
+								<span class="medium class_title">CS142</span>
+								<br/>
+								Web Applications with HTML, CSS, & JavaScript
+							</div>
+						</a>
+						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=psych50%3A+introduction+to+cognitive+neuroscience&collapse=">	
+							<div class="course_col col3 absolute centered">
+								<span class="medium class_title">PSYCH50</span>
+								<br/>
+								Intro to Cognitive Neuroscience
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="big_list auto_margin relative">
+					<div class="course_list">
+						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs107+computer+organization+and+systems&collapse=">	
+							<div class="course_col col1 centered">
+								<span class="medium class_title">CS107</span>
+								<br/>
+								Computer Organizations and Systems in C
+							</div>
+						</a>
+						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs106b%3A+programming+abstractions&collapse=">	
+							<div class="course_col col2 absolute centered">
+								<span class="medium class_title">CS106B</span>
+								<br/>
+								Programming Abstractions in C++
+							</div>
+						</a>
+						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs106a%3A+programming+methodology&collapse=">	
+							<div class="course_col col3 absolute centered">
+								<span class="medium class_title">CS106A</span>
+								<br/>
+								Programming Methodology in Java
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="big_list auto_margin relative">
+					<div class="course_list">
+						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=CS103%3A+mathematical+foundations+of+computing&collapse=">
+							<div class="course_col col1 centered">
+								<span class="medium class_title">CS103</span>
+								<br/>
+								Mathematical Foundations of Computing
+							</div>
+						</a>
+						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=CS109%3A+introduction+to+probability+for+computer+scientists&collapse=">	
+							<div class="course_col col2 absolute centered">
+								<span class="medium class_title">CS109</span>
+								<br/>
+								Probability and Statistics
+							</div>
+						</a>
+						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&q=COMM+169%3A+Computers+and+Interfaces&collapse=">
+							<div class="course_col col3 absolute centered">
+								<span class="medium class_title">COMM169</span>
+								<br/>
+								Computers & Interfaces
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="little_list">
+					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs+147%3A+introduction+to+human+computer+interaction+design&collapse=">	
+						<div class="centered auto_margin little_card">
+							<div class="vertical_center_container">
+								<span class="medium class_title">CS147</span>
+								<br/>
+								Intro to Human-Computer Interaction & Design
+							</div>
+						</div>
+					</a>
+					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs+142%3A+web+applications&collapse=">
+						<div class="centered auto_margin little_card">
+							<div class="vertical_center_container">
+								<span class="medium class_title">CS142</span>
+								<br/>
+								Web Applications with HTML, CSS, & JavaScript
+							</div>
+						</div>
+					</a>
+					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=psych50%3A+introduction+to+cognitive+neuroscience&collapse=">	
+						<div class="centered auto_margin little_card">
+							<div class="vertical_center_container">
+								<span class="medium class_title">PSYCH50</span>
+								<br/>
+								Intro to Cognitive Neuroscience
+							</div>
+						</div>
+					</a>
+					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs107+computer+organization+and+systems&collapse=">	
+						<div class="centered auto_margin little_card">
+							<div class="vertical_center_container">
+								<span class="medium class_title">CS107</span>
+								<br/>
+								Computer Organization and Systems in C
+							</div>
+						</div>
+					</a>
+					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs106b%3A+programming+abstractions&collapse=">
+						<div class="centered auto_margin little_card">
+							<div class="vertical_center_container">
+								<span class="medium class_title">CS106B</span>
+								<br/>
+								Programming Abstractions in C++
+							</div>
+						</div>
+					</a>
+					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs106a%3A+programming+methodology&collapse=">	
+						<div class="centered auto_margin little_card">
+							<div class="vertical_center_container">
+								<span class="medium class_title">CS106A</span>
+								<br/>
+								Programming Methodology in Java
+							</div>
+						</div>
+					</a>
+					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=CS103%3A+mathematical+foundations+of+computing&collapse=">	
+						<div class="centered auto_margin little_card">
+							<div class="vertical_center_container">
+								<span class="medium class_title">CS103</span>
+								<br/>
+								Mathematical Foundations of Computing
+							</div>
+						</div>
+					</a>
+					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=CS109%3A+introduction+to+probability+for+computer+scientists&collapse=">	
+						<div class="centered auto_margin little_card">
+							<div class="vertical_center_container">
+								<span class="medium class_title">CS109</span>
+								<br/>
+								Probability and Statistics
+							</div>
+						</div>
+					</a>
+					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&q=COMM+169%3A+Computers+and+Interfaces&collapse=">	
+						<div class="centered auto_margin little_card">
+							<div class="vertical_center_container">
+								<span class="medium class_title">COMM169</span>
+								<br/>
+								Computers & Interfaces
+							</div>
+						</div>
+					</a>
+				</div>
 			</div>
 		</a>
 
-		<a name="contact">
-			<div class="section contact">
-				<div class="title light">
-					CONTACT
+		<a name="contact"></a>
+		<div class="contact">
+			<div class="footer small_footer light centered">
+				<i class="fa fa-envelope-o"></i>
+				<a href="mailto:ersinger@cs.stanford.edu">
+					&nbsp;ersinger@cs.stanford.edu
+				</a>
+				<span class="dot">&middot;</span>
+				<i class="fa fa-linkedin"></i>
+				<a href="https://www.linkedin.com/in/singererin/">
+					&nbsp;LinkedIn
+				</a>
+				<span class="dot">&middot;</span>
+				<i class="fa fa-flickr"></i>
+				<a href="https://www.flickr.com/photos/128269891@N07/sets/">
+					&nbsp;Flickr
+				</a>
+				<span class="dot">&middot;</span>
+				<i class="fa fa-mobile absolute"></i> 
+				<span class="footer_text">
+					&nbsp;&nbsp;&nbsp;&nbsp;858-414-6008
+				</span>
+			</div>
+			<div class="footer big_footer light centered">
+				<div>
+					<i class="fa fa-envelope-o"></i>
+					<a href="mailto:ersinger@cs.stanford.edu">
+						&nbsp;ersinger@cs.stanford.edu
+					</a>
+				</div>
+				<div>
+					<i class="fa fa-linkedin"></i>
+					<a href="https://www.linkedin.com/in/singererin/">
+						&nbsp;LinkedIn
+					</a>
+				</div>
+				<div>
+					<i class="fa fa-flickr"></i>
+					<a href="https://www.flickr.com/photos/128269891@N07/sets/">
+						&nbsp;Flickr
+					</a>
+				</div>
+				<div>
+					<i class="fa fa-mobile absolute"></i> 
+					<span class="footer_text">
+						&nbsp;&nbsp;&nbsp;&nbsp;858-414-6008
+					</span>
 				</div>
 			</div>
-		</a>
+		</div>
 
 		<script>
 			$(document).ready(function(){

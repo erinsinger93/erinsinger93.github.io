@@ -19,19 +19,24 @@ a {
 	color: #333;
 }
 
+p {
+	font-size: 1.1em;
+	font-family: proximanova-light;
+}
+
 #header {
 	width: 100%;
 	height: 90%;
 	z-index: 1;
   background-color: #1b040a;
   position: relative;
-  box-shadow: 0px 3px 8px #333;
+  box-shadow: 0px 3px 8px #572430;
 }
 
 #mobile-header {
 	display: none;
   z-index: 1;
-  box-shadow: 0px 3px 8px #333;
+  box-shadow: 0px 3px 8px #572430;
 }
 
 #mobile-header-buttons {
@@ -48,8 +53,20 @@ a {
 	color: #fff;
 }
 
+.mobile_buttons {
+	transition: background-color 0.4s ease;
+}
+
+.mobile_buttons:hover {
+	background-color: #333;
+}
+
 #mobile-header-buttons a {
 	text-decoration: none !important;
+}
+
+.medium_margin_bottom {
+	margin-bottom: 25px;
 }
 
 .mobile_button1 {
@@ -69,6 +86,10 @@ a {
 .mobile_button4 {
 	left: 75%;
 	width: 25%;
+}
+
+.centered {
+	text-align: center;
 }
 
 .vertical_center_container {
@@ -130,6 +151,16 @@ a {
 	body {
 		font-size: 2.0em;
 	}
+	p {
+		font-size: 1.2em;
+		font-family: proximanova !important;
+	}
+	.mobile_center {
+		text-align: center !important;
+	}
+	.section {
+		padding: 5% 5% !important;
+	}
 	#header {
 		display: none;
 	}
@@ -145,20 +176,62 @@ a {
 		height: 200px;
 	}
 	.mobile_profile_image {
-		display: block !important;
 		max-width: 400px;
+	}
+	.mobile_picture_section {
+		display: block !important;
+	}
+	.tutera_image {
+		margin-top: 50px;
+		height: 500px !important;
+	}
+	.beamit_mobile {
+		padding-right: 4%;
+		margin-bottom: 20px !important;
+		height: 300px !important;
+	}
+	.mobile_experience_image {
+		display: block !important;
+	}
+	.experience_text {
+		width: 100% !important;
+		padding-bottom: 1px !important;
+	}
+	.experience_image_container {
+		display: none;
 	}
 	.profile_container {
 		display: none;
 	}
 	.about_text {
 		width: 100% !important;
+		margin-left: 0 !important;
+		padding-left: 0 !important;
+		border-left: 	none !important;
+	}
+	.big_list {
+		display: none !important;
+	}
+	.little_list {
+		display: block !important;
+	}
+	.little_card {
+		height: 300px !important;
+	}
+	.small_footer {
+		display: none !important;
+	}
+	.big_footer {
+		display: block !important;
 	}
 }
 
 @media (max-width : 899px) { 
 	#header {
 		display: none;
+	}
+	.mobile_center {
+		text-align: center !important;
 	}
 	#mobile-header {
 		display: block;
@@ -172,14 +245,43 @@ a {
 		height: 150px;
 	}
 	.mobile_profile_image {
-		display: block !important;
 		max-width: 200px;
+	}
+	.mobile_picture_section {
+		display: block !important;
+	}
+	.tutera_image {
+		margin-top: 30px;
+	}
+	.beamit_mobile {
+		padding-right: 4%;
+		margin-bottom: 20px !important;
+		height: 150px !important;
+	}
+	.mobile_experience_image {
+		display: block !important;
+	}
+	.experience_text {
+		width: 100% !important;
+		padding-bottom: 1px !important;
+	}
+	.experience_image_container {
+		display: none;
 	}
 	.profile_container {
 		display: none;
 	}
 	.about_text {
 		width: 100% !important;
+		margin-left: 0 !important;
+		padding-left: 0 !important;
+		border-left: 	none !important;
+	}
+	.big_list {
+		display: none !important;
+	}
+	.little_list {
+		display: block !important;
 	}
 }
 
@@ -193,6 +295,7 @@ a {
 	height: 25%;
 	width: 100%;
 	border-bottom: 1px solid #333;
+	transition: background-color 0.4s ease;
 }
 
 .header_button:hover {
@@ -216,7 +319,7 @@ a {
 }
 
 .section {
-	padding: 5%;
+	padding: 5% 12% ;
 	overflow: auto;
 }
 
@@ -232,7 +335,7 @@ a {
 }
 
 .experience {
-	box-shadow: 0px 2px 2px #767575;
+	box-shadow: 0px 2px 5px #ABAAAA;
 	background-repeat: no-repeat;
   background-image: url("texture_background.png");
   background-image: -webkit-image-set(
@@ -243,8 +346,10 @@ a {
 }
 
 .about_text {
-	width: 60%;
 	height: 100%;
+	margin-left: 250px;
+	padding-left: 50px;
+	border-left: 	1px solid #762F3F;
 	float: left;
 	text-shadow: 1px 1px 1px #762F3F;
 }
@@ -253,17 +358,24 @@ a {
 	color: #fff;
 }
 
+.weird_margin {
+	margin-bottom: -5px;
+}
+
 .profile_container {
-	width: 30%;
+	width: 200px;
 	height: 100%;
 	top: 0;
-	right: 5%;
 	position: absolute;
 }
 
-.mobile_profile_image {
+.mobile_picture_section {
 	display: none;
+}
+
+.mobile_profile_image {
 	height: auto;
+	margin-top: 15px;
 	border: 2px solid #762F3F;
 }
 
@@ -275,15 +387,45 @@ a {
 
 .profile_image {
 	border: 2px solid #762F3F;
-	max-width: 80%;
+	max-width: 200px;
 }
 
-.experience_box {
+.fa-angle-right {
+	margin-top: -1px;
+	margin-left: 5px;
+	font-size: 1.5em;
+}
+
+.mobile_experience_image {
+	display: none;
+}
+
+.tutera_image {
+	height: 300px;
+	width: auto;
+	bottom: 0;
+}
+
+.list_border {
+	border-bottom: 1px solid #c2c2c2;
 	margin-bottom: 35px;
+}
+
+.experience_image_container {
+	width: 30%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	position: absolute;
+}
+
+.beamit_image {
+	right: 2% !important;
 }
 
 .experience_text {
 	width: 60%;
+	padding-bottom: 15px;
 }
 
 .experience_timeline {
@@ -294,6 +436,100 @@ a {
 	margin-bottom: 5px;
 }
 
+.experience_footer {
+	margin-top: 10px;
+}
+
+.experience_link:hover {
+	color:#923a4e
+}
+
 .experience a {
 	text-decoration: none;
+}
+
+.course_list {
+	height: 175px;
+	margin-bottom: 20px;
+}
+
+.col2 {
+	left: 35%;
+}
+
+.col3 {
+	left: 70%;
+}
+
+.class_title {
+	line-height: 1.5em;
+}
+
+.class_description {
+	line-height: 1.2em;
+}
+
+.course_col {
+	height: 175px;
+	width: 30%;
+	padding: 5%;
+	display: inline-block;
+	margin-bottom: 5px;
+	line-height: 1.2em;
+	background-color: #E8E8E8;
+	box-shadow: 2px 2px 2px #B6B6B6;
+	transition: background-color 0.4s ease;
+}
+
+.courses a {
+	text-decoration: none !important;
+}
+
+.course_col:hover {
+	background-color: #ABABAB;
+}
+
+.little_list {
+	display: none;
+}
+
+.little_card {
+	height: 200px;
+	margin-bottom: 35px;
+	width: 70%;
+	padding: 2% 10%;
+	background-color: #E8E8E8;
+	box-shadow: 2px 2px 2px #B6B6B6;
+	transition: background-color 0.4s ease;
+}
+
+.little_card:hover {
+	background-color: #ABABAB;
+}
+
+.contact {
+	background-color: #1b040a;
+	color: #fff !important;
+	padding: 3% 5%;
+}
+
+.contact a {
+	color: #fff !important;
+	text-decoration: none;
+}
+
+.footer {
+	font-size: 1.2em;
+}
+
+.big_footer {
+	display: none;
+}
+
+.fa-mobile {
+	font-size: 1.3em;
+}
+
+.dot {
+	padding: 0% 2%;
 }
