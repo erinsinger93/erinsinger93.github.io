@@ -148,6 +148,19 @@ a {
 		display: block !important;
 		max-width: 400px;
 	}
+	.experience_image {
+		margin-top: 50px;
+		height: 500px !important;
+	}
+	.mobile_experience_image {
+		display: block !important;
+	}
+	.experience_text {
+		width: 100% !important;
+	}
+	.experience_image_container {
+		display: none;
+	}
 	.profile_container {
 		display: none;
 	}
@@ -174,6 +187,18 @@ a {
 	.mobile_profile_image {
 		display: block !important;
 		max-width: 200px;
+	}
+	.experience_image {
+		margin-top: 30px;
+	}
+	.mobile_experience_image {
+		display: block !important;
+	}
+	.experience_text {
+		width: 100% !important;
+	}
+	.experience_image_container {
+		display: none;
 	}
 	.profile_container {
 		display: none;
@@ -278,10 +303,13 @@ a {
 	max-width: 80%;
 }
 
+.mobile_experience_image {
+	display: none;
+}
+
 .experience_image {
 	height: 300px;
 	width: auto;
-	margin-top: -30px;
 	bottom: 0;
 	/*box-shadow: 0px 2px 1px #767575;*/
 }
