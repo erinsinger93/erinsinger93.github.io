@@ -53,6 +53,14 @@ p {
 	color: #fff;
 }
 
+.mobile_buttons {
+	transition: background-color 0.4s ease;
+}
+
+.mobile_buttons:hover {
+	background-color: #333;
+}
+
 #mobile-header-buttons a {
 	text-decoration: none !important;
 }
@@ -285,6 +293,7 @@ p {
 	height: 25%;
 	width: 100%;
 	border-bottom: 1px solid #333;
+	transition: background-color 0.4s ease;
 }
 
 .header_button:hover {
@@ -466,6 +475,15 @@ p {
 	line-height: 1.2em;
 	background-color: #E8E8E8;
 	box-shadow: 2px 2px 2px #B6B6B6;
+	transition: background-color 0.4s ease;
+}
+
+.courses a {
+	text-decoration: none !important;
+}
+
+.course_col:hover {
+	background-color: #ABABAB;
 }
 
 .little_list {
@@ -479,6 +497,11 @@ p {
 	padding: 2% 10%;
 	background-color: #E8E8E8;
 	box-shadow: 2px 2px 2px #B6B6B6;
+	transition: background-color 0.4s ease;
+}
+
+.little_card:hover {
+	background-color: #ABABAB;
 }
 
 .contact {
