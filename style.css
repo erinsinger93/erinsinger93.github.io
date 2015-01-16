@@ -24,6 +24,11 @@ p {
 	font-family: proximanova-light;
 }
 
+.sourcesans {
+	font-family: 'Source Sans Pro', sans-serif !important;
+	font-weight: 200;
+}
+
 #header {
 	width: 100%;
 	height: 90%;
@@ -318,6 +323,7 @@ p {
 
 .title {
 	font-size: 2.75em;
+	font-weight: 300;
 }
 
 .section:hover {
@@ -338,6 +344,14 @@ p {
 
 .about:hover {
 	color: #fff;
+}
+
+.resume {
+	font-size: 1.1em;
+}
+
+.resume:hover {
+	color: #762F3F;
 }
 
 .experience {
@@ -421,7 +435,7 @@ p {
 }
 
 .fa-angle-right {
-	margin-top: -1px;
+	margin-top: 0px;
 	margin-left: 5px;
 	font-size: 1.5em;
 }
