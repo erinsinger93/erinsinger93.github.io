@@ -364,6 +364,27 @@ p {
 	color: #fff;
 }
 
+.about_text p {
+	position: relative;
+	z-index: 2;
+}
+
+.sandcastle {
+	position: absolute;
+	right: 30px;
+	top: 20%;
+	z-index: 0;
+	height: 330px;
+	width: 475px;
+	background-repeat: no-repeat;
+	background-image: url("sandcastle.png");
+	background-image: -webkit-image-set(
+    url("sandcastle.png")    1x,
+    url("sandcastle@2x.png") 2x
+  );
+
+}
+
 .weird_margin {
 	margin-bottom: -5px;
 }
@@ -383,6 +404,8 @@ p {
 	height: auto;
 	margin-top: 15px;
 	border: 2px solid #762F3F;
+	position: relative;
+	z-index: 3;
 }
 
 .full {
@@ -394,6 +417,7 @@ p {
 .profile_image {
 	border: 2px solid #762F3F;
 	max-width: 200px;
+	z-index: 3;
 }
 
 .fa-angle-right {
