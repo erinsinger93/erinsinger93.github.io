@@ -151,7 +151,6 @@ p {
 	text-align: center;
 }
 
-
 @media only screen and (min-device-width : 200px) and (max-device-width : 899px) and (orientation : portrait) { 
 	body {
 		font-size: 2.0em;
@@ -197,6 +196,11 @@ p {
 	}
 	.mobile_experience_image {
 		display: block !important;
+	}
+	.sandcastle {
+		height: 100% !important;
+		width: 100% !important;
+		right: 5px !important;
 	}
 	.experience_text {
 		width: 100% !important;
@@ -390,6 +394,7 @@ p {
 	z-index: 0;
 	height: 330px;
 	width: 475px;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-image: url("sandcastle.png");
 	background-image: -webkit-image-set(
