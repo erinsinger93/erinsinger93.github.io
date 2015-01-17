@@ -344,6 +344,7 @@ p {
 	color: #fff;
 	text-shadow: 2px 2px 3px #762F3F;
 	box-shadow: 0px 2px 5px #767575;
+	overflow: hidden;
 }
 
 .about:hover {
