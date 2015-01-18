@@ -407,7 +407,7 @@ p {
 .angled_bottom {
 	position: absolute;
 	margin-top: -1px;
-	width: 101%;
+	width: 100%;
 	height: 80px;
 	background-size: contain;
 	background-repeat: no-repeat;
