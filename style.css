@@ -5,7 +5,7 @@ body {
   background-image: url("canvas.png");
   background-image: -webkit-image-set(
     url("canvas.png")    1x,
-    url("canvas@2x.png") 2x
+    url("canvas.png") 2x
   );
 	background-attachment: fixed;
 	overflow: auto;
