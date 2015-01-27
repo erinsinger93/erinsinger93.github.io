@@ -2,11 +2,7 @@ body {
 	color: #333;
 	font-family: proximanova !important;
 	background-repeat: repeat;
-  background-image: url("canvas.png");
-  background-image: -webkit-image-set(
-    url("canvas.png")    1x,
-    url("canvas.png") 2x
-  );
+  background-image: url("white_canvas.png");
 	background-attachment: fixed;
 	overflow: auto;
 }
