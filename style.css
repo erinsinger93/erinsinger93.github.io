@@ -397,7 +397,7 @@ p {
 	background-repeat: no-repeat;
 	background-image: url("sandcastle.png");
 	background-image: -webkit-image-set(
-    url("sandcastle2.png")    1x,
+    url("sandcastle.png")    1x,
     url("sandcastle@2x.png") 2x
   );
 }
