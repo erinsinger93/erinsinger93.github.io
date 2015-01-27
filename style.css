@@ -138,10 +138,10 @@ p {
 	height: 100%;
 	width: 80%;
 	background-repeat: no-repeat;
-  background-image: url("abstract.png");
+  background-image: url("abstract.jpg");
   background-image: -webkit-image-set(
-    url("abstract.png")    1x,
-    url("abstract.png") 2x
+    url("abstract.jpg")    1x,
+    url("abstract.jpg") 2x
   );
   background-size: cover;
 }
