@@ -67,7 +67,7 @@ a:hover {
 }
 
 .large {
-	font-size: 2.75em;
+	font-size: 2.0em;
 }
 
 .medium {
@@ -133,7 +133,7 @@ a:hover {
 		display: none;
 	}
 
-	.about_section {
+	.section .about {
 		padding: 7% 10% !important;
 	}
 
@@ -232,7 +232,7 @@ a:hover {
 		font-size: 18px;
 	}
 
-	.about_section {
+	.section .about {
 		padding: 7% 10% !important;
 	}
 
@@ -308,7 +308,7 @@ a:hover {
 	padding: 5% 10%;
 }
 
-.about_section {
+.section .about {
 	padding: 7% 17% 7% 10%;
 	overflow: auto;
 }
@@ -347,7 +347,7 @@ a:hover {
 	width: 115px;
 	height: 100%;
 	margin-left: 70px;
-	top: 0;
+	top: -10px;
 	position: absolute;
 }
 
@@ -455,17 +455,16 @@ a:hover {
 .course_col {
 	height: 175px;
 	width: 30%;
-	padding: 5%;
+	padding: 4%;
 	display: inline-block;
 	margin-bottom: 5px;
 	line-height: 1.2em;
-	background-color: #E8E8E8;
-	box-shadow: 2px 2px 2px #B6B6B6;
-	transition: background-color 0.4s ease;
+	border: 1px solid #333;
+	transition: border 0.4s ease;
 }
 
 .courses {
-	background-color: #ccc;
+	background-color: white;
 	box-shadow: 0px -2px 5px #ABAAAA;
 }
 
@@ -473,8 +472,12 @@ a:hover {
 	text-decoration: none !important;
 }
 
+.courses a:hover {
+	/*color: #333 !important;*/
+}
+
 .course_col:hover {
-	background-color: #ABABAB;
+	border: 1px solid #00B4D6 !important;
 }
 
 .little_list {
@@ -486,13 +489,12 @@ a:hover {
 	margin-bottom: 35px;
 	width: 70%;
 	padding: 2% 10%;
-	background-color: #E8E8E8;
-	box-shadow: 2px 2px 2px #B6B6B6;
-	transition: background-color 0.4s ease;
+	border: 1px solid #333;
+	transition: border 0.4s ease;
 }
 
 .little_card:hover {
-	background-color: #ABABAB;
+	border: 1px solid #00B4D6 !important;
 }
 
 .contact {
