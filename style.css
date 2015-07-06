@@ -109,12 +109,12 @@ a:hover {
 
 .header_name {
 	letter-spacing: 2.5px;
-	font-size: 80px;
+	font-size: 5.0em;
 }
 
 .header_catch {
 	margin: -15px 0px 25px 0px;
-	font-size: 38px;
+	font-size: 2.5em;
 }
 
 .sections {
@@ -135,8 +135,14 @@ a:hover {
 		font-size: 2.0em;
 	}
 
-	#header {
-		height: 70%;
+	.header_container {
+		z-index: 2;
+		top: 47%;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+		color: white;
+		background-color: #1B050A;
 	}
 
 	.header_container {
@@ -151,16 +157,12 @@ a:hover {
 
 	.header_name {
 		letter-spacing: 2.5px;
-		font-size: 48px;
+		font-size: 3.0em;
 	}
 
 	.header_catch {
 		margin: -15px 0px 15px 0px;
-		font-size: 28px;
-	}
-
-	.sections {
-		font-size: 1.2em;
+		font-size: 1.7em;
 	}
 
 	.weird_margin {
@@ -241,10 +243,6 @@ a:hover {
 }
 
 @media (max-width : 899px) { 
-	
-	#header {
-		height: 70%;
-	}
 
 	.header_container {
 		z-index: 2;
@@ -258,12 +256,12 @@ a:hover {
 
 	.header_name {
 		letter-spacing: 2.5px;
-		font-size: 48px;
+		font-size: 3.0em;
 	}
 
 	.header_catch {
 		margin: -15px 0px 15px 0px;
-		font-size: 28px;
+		font-size: 1.7em;
 	}
 
 	.sections {
@@ -357,7 +355,7 @@ a:hover {
 
 .section_title {
 	color: #333;
-	font-size: 40px;
+	font-size: 2.5em;
 }
 
 .about {
