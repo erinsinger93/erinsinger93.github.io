@@ -335,10 +335,6 @@ a:hover {
 		display: block !important;
 	}
 
-	.fa-mobile {
-		margin-top: 6px !important;
-	}
-
 	.mobile_center {
 		padding-left: 15%;
 	}
@@ -579,9 +575,9 @@ a:hover {
 }
 
 .fa-mobile {
-	margin-top: 3px;
 	margin-left: 2px;
 	font-size: 1.7em !important;
+	top: 4px;
 }
 
 .fa-linkedin {
@@ -657,8 +653,4 @@ a:hover {
   font-size: 0.7em;
   color: #626E75;
   letter-spacing: 2px;
-}
-
-.fa-mobile {
-	font-size: 1.3em;
 }
