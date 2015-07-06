@@ -133,7 +133,7 @@ a:hover {
 	margin-bottom: 25px !important;
 }
 
-@media only screen and (min-device-width : 200px) and (max-device-width : 899px) { 
+@media only screen and (min-device-width : 200px) and (max-device-width : 899px) and (orientation : portrait) { 
 	body {
 		font-size: 2.0em;
 	}
@@ -242,6 +242,17 @@ a:hover {
 
 	.mobile_center {
 		padding-left: 15%;
+	}
+}
+
+@media only screen and (min-device-width : 200px) and (max-device-width : 899px) and (orientation : landscape) { 
+	.footer .big {
+		-webkit-flex:1 !important;
+	  -webkit-box-flex:1 !important;
+	  -moz-flex:1 !important;
+	  -moz-box-flex:1 !important;
+	  -ms-flex:1 !important;
+	  flex:1 !important;
 	}
 }
 
