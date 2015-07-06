@@ -5,6 +5,9 @@ body {
 	background-repeat: repeat;
 	background-attachment: fixed;
 	overflow: auto;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -130,7 +133,7 @@ a:hover {
 	margin-bottom: 25px !important;
 }
 
-@media only screen and (min-device-width : 200px) and (max-device-width : 899px) and (orientation : portrait) { 
+@media only screen and (min-device-width : 200px) and (max-device-width : 899px) { 
 	body {
 		font-size: 2.0em;
 	}
@@ -595,7 +598,6 @@ a:hover {
   display:flex;
   flex-direction:row;
   flex-flow: row wrap;
-  font-weight: 300;
   padding: 3% 11%;
   color: white;
   line-height: 1.7em;
@@ -635,7 +637,6 @@ a:hover {
 .footer_text2 {
 	margin-left: 5px;
 }
-
 
 .header {
   padding-top: 25px;
