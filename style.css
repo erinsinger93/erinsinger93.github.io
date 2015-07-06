@@ -335,6 +335,10 @@ a:hover {
 		display: block !important;
 	}
 
+	.fa-mobile {
+		margin-top: 6px !important;
+	}
+
 	.mobile_center {
 		padding-left: 15%;
 	}
