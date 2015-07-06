@@ -118,7 +118,7 @@ a:hover {
 }
 
 .sections {
-	font-size: 20px;
+	font-size: 0.8em;
 }
 
 .sections a {
@@ -133,6 +133,34 @@ a:hover {
 @media only screen and (min-device-width : 200px) and (max-device-width : 899px) and (orientation : portrait) { 
 	body {
 		font-size: 2.0em;
+	}
+
+	#header {
+		height: 70%;
+	}
+
+	.header_container {
+		z-index: 2;
+		top: 47%;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+		color: white;
+		background-color: #1B050A;
+	}
+
+	.header_name {
+		letter-spacing: 2.5px;
+		font-size: 48px;
+	}
+
+	.header_catch {
+		margin: -15px 0px 15px 0px;
+		font-size: 28px;
+	}
+
+	.sections {
+		font-size: 1.2em;
 	}
 
 	.weird_margin {
@@ -239,7 +267,7 @@ a:hover {
 	}
 
 	.sections {
-		font-size: 18px;
+		font-size: 1.2em;
 	}
 
 	.section .about {
