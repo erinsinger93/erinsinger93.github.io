@@ -200,6 +200,12 @@ a:hover {
 		height: 300px !important;
 	}
 
+	.linked_mobile {
+	  margin-bottom: 35px !important;
+	  margin-top: 15px !important;
+	  height: 300px !important;
+	}
+
 	.mobile_experience_image {
 		display: block !important;
 	}
@@ -311,6 +317,12 @@ a:hover {
 		padding-right: 4%;
 		margin-bottom: 20px !important;
 		height: 150px !important;
+	}
+
+	.linked_mobile {
+	  margin-bottom: 35px !important;
+	  margin-top: 15px !important;
+	  height: 150px !important;
 	}
 
 	.mobile_experience_image {
@@ -454,7 +466,7 @@ a:hover {
 
 .list_border {
 	border-bottom: 1px solid #c2c2c2;
-	margin-bottom: 35px;
+	margin-bottom: 50px;
 }
 
 .experience_image_container {
@@ -469,9 +481,18 @@ a:hover {
 	right: 2% !important;
 }
 
+.link_image {
+	right: 3% !important;
+	top: -10% !important;
+}
+
 .experience_text {
 	width: 60%;
 	padding-bottom: 15px;
+}
+
+.notemap {
+	margin-bottom: 75px !important;
 }
 
 .experience_timeline {
