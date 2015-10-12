@@ -2,88 +2,76 @@
 <html>
 	<head>
 		<title>Erin Singer Portfolio Site</title>
-		<link rel="stylesheet" type="text/css" href="zurb_foundation.css">
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="style.css">
-
-		<!-- jquery -->
-		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		
-		<!-- Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300, 500' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div id="header">
-
-			<div class="header_container auto_margin vertical_center_container">
-				<div class="header_name light">
-					erin singer
-				</div>
-				<div class="header_catch condensed">
-					WEB, UI & UX
-				</div>
-				<div class="sections">
-					<a href="#about">
-						about
-					</a>
-					<span class="dot">&middot;</span>
-					<a href="#experience">
-						experience
-					</a>
-					<span class="dot">&middot;</span>					
-					<a href="#courses">
-						courses
-					</a>
-					<span class="dot">&middot;</span>					
-					<a href="#contact"> 
-						contact 
-					</a>
+		<div id="header" class="container">
+			<div class="header_container vertical_center_container row">
+				<div class="header_name col-lg-4 col-md-5 col-sm-6 col-xs-12"></div>
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+				<div class="header_sub col-lg-7 col-md-6 col-sm-5 col-xs-12">
+					<div class="header_catch condensed row">
+						<div class="col-md-12 thick">
+							WEB, UI & UX
+						</div>
+					</div>
+					<div class="sections row">
+						<div class="col-md-12">
+							<a href="#about">
+								about
+							</a>
+							<span class="dot">&middot;</span>
+							<a href="#experience">
+								experience
+							</a>
+							<span class="dot">&middot;</span>					
+							<a href="#experience">
+								projects
+							</a>
+							<span class="dot">&middot;</span>					
+							<a href="#courses">
+								courses
+							</a>
+							<span class="dot">&middot;</span>					
+							<a href="#contact"> 
+								contact 
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>	
 
 			<div class="header_image">
-			</div>
-			
+			</div>		
 		</div>
 
 		<a name="about"></a>
 			<div class="section about relative">	
-				<div class="profile_container">
-					<div class="vertical_center_container">
-						<div class="condensed centered section_title">
-							ABOUT
-						</div>
-						<img class="profile_image" src="profile_img.png" />
-						<div>
-							<div class="condensed medium weird_margin">
-								STANFORD<br/>
-								SENIOR <br/>
-								CS + <br/>
-								HCI
-							</div>
-						</div>
+				
+				<div class="condensed large">
+					I've always loved to create.
+				</div>
+				
+				<div>
+					<div class="condensed medium weird_margin">
+						STANFORD<br/>
+						SENIOR <br/>
+						CS + <br/>
+						HCI
 					</div>
 				</div>
-
-				<div class="mobile_profile_container centered">
-					<div class="condensed section_title">
-						ABOUT
-					</div>
-					<img class="mobile_profile_image" src="profile_img.png" />
-				</div>
-
-				<span class="about_text">
-					<div class="body_text">
-						I am a junior at Stanford University studying Computer Science with a concentration in Human-Computer Interaction. Maybe it all began with building elaborate sand castles on the beaches of San Diego close to where I grew up, but I've always loved to create & design.<br/><br/>Before falling in love with Computer Science, I studied Neuroscience and Psychology and learned to appreciate how our brains help us perceive the world- including design. This knowledge now plays an integral role in my design process.<br/><br/>When I'm not programming and designing, I like to play retro videogames, watch Marvel movies, play softball, and listen to 80's music.
-						<div class="resume">
-							<a href="SummerResume2015.pdf">
-								view resume 
-								<i class="fa fa-angle-double-right"></i>
-							</a>
-						</div>
-					</div>
-				</span>
+					
 				
 			</div>
 
@@ -93,16 +81,16 @@
 					EXPERIENCE
 				</div>
 				
-				<div class="experience_box list_border notemap relative">
+				<div class="experience_box list_border notemap relative row">
 
-					<div class="experience_text">
+					<div class="experience_text col-md-6 col-sm-6 col-xs-12">
 						<p>
 							<div class="experience_header">
 								<a href="https://www.notemap.co" class="experience_title medium">NOTEMAP</a> 
 								<span class="medium light">&nbsp; | &nbsp;</span>
 								<span class="experience_timeline condensed">APR 2015 - PRESENT</span>
 							</div>
-							NoteMap is a platform designed to help programmers and programming students better annotate and take notes on code. NoteMap boasts a dual interface that features both a text editor and code editor with functionality to 'link' content between the two. I worked as the primary UI/UX designer and as one of the front-end developers on our team of three students. NoteMap was originally created for a Stanford senior project assignment and went on to win an award at the Stanford senior project fair. We plan to finish developing NoteMap and officially launch it this coming fall, though our site is currently live and fully functional. <br/>
+							NoteMap is a platform designed to help programmers and programming students better annotate and take notes on code. NoteMap boasts a dual interface that features both a text editor and code editor with functionality to 'link' content betpween the two. I worked as the primary UI/UX designer and as one of the front-end developers on our team of three students. NoteMap was originally created for a Stanford senior project assignment and went on to win an award at the Stanford senior project fair. We plan to finish developing NoteMap and officially launch it this coming fall, though our site is currently live and fully functional. <br/>
 							<div class="experience_footer condensed">
 								<a href="http://www.notemap.co">
 									WWW.NOTEMAP.CO
@@ -116,15 +104,14 @@
 						</p>
 					</div>
 
-					<div class="experience_image_container link_image">
-						<img class="vertical_center_container absolute" src="linking-hmpg-icon.png" />
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<img class="img-responsive link_image auto_margin" src="linking-hmpg-icon.png" />
 					</div>
-					<img class="mobile_experience_image linked_mobile auto_margin experience_image" src="linking-hmpg-icon.png" />
 
 				</div>
 
-				<div class="experience_box list_border relative">
-					<div class="experience_text">
+				<div class="experience_box list_border relative row">
+					<div class="experience_text experience_text col-md-6 col-sm-6 col-xs-12">
 						<p>
 							<div class="experience_header">
 								<a href="https://www.tutera.co" class="experience_title medium">TUTERA</a> 
@@ -146,14 +133,14 @@
 						</p>
 					</div>
 					
-					<div class="experience_image_container">
-						<img class="tutera_image absolute" src="iPhoneTuteraMockup.png" />
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<img class="img-responsive tutera_image" src="iPhoneTuteraMockup.png" />
 					</div>
-					<img class="mobile_experience_image auto_margin tutera_image" src="iPhoneTuteraMockup.png" />					
+
 				</div>
 
-				<div class="experience_box relative">
-					<div class="experience_text">	
+				<div class="experience_box relative row">
+					<div class="experience_text col-md-6 col-sm-6 col-xs-12">	
 						<p>
 							<div class="experience_header">
 								<a href="https://www.cooliris.com/cooliris-app/" class="experience_title medium">COOLIRIS</a> 
@@ -173,11 +160,11 @@
 							</div>
 						</p>
 					</div>
-					<div class="experience_image_container beamit_image">
-						<img class="vertical_center_container absolute" src="beamit-app.png" />
+					<div class="beamit_image col-md-6 col-sm-6 col-xs-12">
+						<img class="img-responsive auto_margin" src="beamit-app.png" />
 					</div>
-					<img class="mobile_experience_image beamit_mobile auto_margin experience_image" src="beamit-app.png" />
 				</div>
+
 			</div>
 		</a>
 
