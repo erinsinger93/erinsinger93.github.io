@@ -128,7 +128,7 @@ a:hover {
 }
 
 .header_catch {
-	margin: -15px 0px 0px -15px;
+	margin: -15px 0px 0px -17px;
 	font-size: 4em;
 }
 
@@ -161,24 +161,53 @@ a:hover {
 	.last_project {
 		padding-top: 60px !important;
 	}
+	
+	.age {
+		display: none !important;
+	}
+
+	.timeline {
+		display: none !important;
+	}
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) and (max-width: 991px) { 
 	.header_sub {
 		transform: translateY(20%);
+	}
+	.about {
+		padding: 3% 10% 9% 10% !important;
+	}
+	.timeline_circle {
+		width: 25px !important;
+		height: 25px !important;
+		margin-top: 10px !important;
+	}
+	.age {
+		display: none !important;
+	}
+	.arrow_up {
+		margin-top: 11px !important;
+	}
+	.hidden_description {
+		top: 55px !important;
+	}
+	.last_item .condensed {
+		text-align: left !important;
+		padding-left: 27px !important;
 	}
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) and (max-width: 1199px){ 
 	.header_sub {
 		transform: translateY(35%);
 	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1440px) {
 	.header_sub {
 		transform: translateY(35%);
 	}
@@ -199,20 +228,152 @@ a:hover {
 	padding: 5% 10%;
 }
 
-.about {
-	padding: 3% 10% 5% 10% !important;
-	overflow: auto;
-}
-
 .section_title {
 	color: #333;
 	font-size: 3.2em;
 }
 
+/* About styling */
+
 .about {
 	background-color: white;
+	padding: 3% 10% 5% 10%;
 	color: #333;
-	overflow: hidden;
+	overflow: visible;
+}
+
+.mobile_about {
+	padding-top: 50px;
+	line-height: 35px;
+}
+
+.timeline {
+	margin-top: 50px !important;
+}
+
+.timeline_item {
+	position: relative;
+	z-index: 2;
+	margin-top: -16px;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.last_item {
+	position: relative;
+	z-index: 0 !important;
+	margin-top: -50px !important;
+	line-height: 30px;
+	font-size: 1.6em;
+}
+
+.timeline_circle {
+	border: 3px solid #333;
+	background: white;
+	border-radius: 40px;
+	width: 40px;
+	height: 40px;
+	-webkit-transition: border .2s ease-out;
+  -moz-transition: border .2s ease-out;
+  -o-transition: border .2s ease-out;
+  -ms-transition: border .2s ease-out;
+  transition: border .2s ease-out;
+}
+
+.arrow_up {
+	opacity: 0;
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #D0D0D0;
+	-webkit-transition: opacity .2s ease-out;
+  -moz-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  -ms-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+}
+
+.arrow_fill {
+	position: relative;
+	z-index: 3;
+	opacity: 0;
+	width: 0; 
+	height: 0; 
+	margin-top: -9px;
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	border-bottom: 9px solid white;
+	-webkit-transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+  -ms-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+}
+
+.hidden_description {
+	opacity: 0;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	width: 213px;
+	border: 1px solid #D0D0D0;
+	border-radius: 10px;
+	text-align: left;
+	font-size: 0.7em;
+	padding: 15px 20px;
+	background: rgba(255, 255, 255, 0.9);
+	-webkit-transition: opacity .2s ease-out;
+  -moz-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  -ms-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+}
+
+.hidden_description .condensed {
+	font-size: 1.6em;
+	line-height: 25px;
+}
+
+.timeline_circle:hover {
+	border: 3px solid #00B4D6 !important;
+	cursor: pointer;
+}
+
+.timeline_circle:hover + .age {
+	color: #00B4D6;
+}
+
+.timeline_circle:hover ~ .hidden_description, .timeline_circle:hover ~ .arrow_up {
+	opacity: 1;
+}
+
+.timeline_circle:hover ~ .arrow_fill {
+	opacity: 1 !important;
+	-webkit-transition: opacity .0s ease-out;
+  -moz-transition: opacity .0s ease-out;
+  -o-transition: opacity .0s ease-out;
+  -ms-transition: opacity .0s ease-out;
+  transition: opacity .0s ease-out;
+}
+
+.age {
+	-webkit-transition: color .2s ease-out;
+  -moz-transition: color .2s ease-out;
+  -o-transition: color .2s ease-out;
+  -ms-transition: color .2s ease-out;
+  transition: color .2s ease-out;
+}
+
+.timeline_profile_circle {
+	position: relative;
+	z-index: 0;
+	border: 3px solid #333;
+	background-image: url("../profile.jpg");
+	background-size: cover;
+	border-radius: 120px;
+	width: 120px;
+	height: 120px;
 }
 
 .resume {
@@ -253,6 +414,10 @@ a:hover {
 	background-image: url("../artistic_line.png");
 	background-size: 100% 15px;
 	background-repeat: no-repeat;
+}
+
+.experience_line {
+	z-index: 0;
 }
 
 .peeking {
@@ -307,7 +472,7 @@ a:hover {
 
 .projects {
 	background-color: white;
-	background-image: url("../watercolor.png");
+	background-image: url("../watercolor2.png");
 	background-size: 101% 100%;
 	background-repeat: no-repeat;
 }
@@ -316,8 +481,35 @@ a:hover {
 	padding: 20px 0px 80px 0px;
 }
 
+.notemap {
+		background-image: url("../notemap_sketch.png");
+}
+
+.tutera {
+	background-image: url("../tutera_sketch.png");
+}
+
 .project_img {
-	max-height: 230px;
+	width: 230px;
+	height: 230px;
+	background-size: 230px;
+	-webkit-transition: background .2s ease-out;
+  -moz-transition: background .2s ease-out;
+  -o-transition: background .2s ease-out;
+  -ms-transition: background .2s ease-out;
+  transition: background .2s ease-out;
+}
+
+.project_img:hover {
+	cursor: pointer;
+}
+
+.notemap:hover {
+	background-image: url("../notemap_sketch_hover.png");
+}
+
+.tutera:hover {
+	background-image: url("../tutera_sketch_hover.png");
 }
 
 .project .condensed {
@@ -330,6 +522,23 @@ a:hover {
 	padding: 5px 0px;
 }
 
+.see_more {
+	padding-top: 105px;
+}
+
+.project .more_hidden {
+	opacity: 0;
+	-webkit-transition: opacity .2s ease-out;
+  -moz-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  -ms-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+}
+
+.project_img:hover .more_hidden {
+	opacity: 1;
+}
+
 .list_border {
 	border-bottom: 1px solid #c2c2c2;
 	margin-bottom: 75px;
@@ -338,11 +547,6 @@ a:hover {
 .beamit_image {
 	max-height: 20vh;
 	right: 2% !important;
-}
-
-.notemap {
-	margin-bottom: 45px !important;
-	padding-bottom: 30px;
 }
 
 /* Other Styling */
