@@ -145,81 +145,6 @@ a:hover {
 	margin-bottom: 25px !important;
 }
 
-@media (max-width: 768px) {
-	.header_sub {
-		text-align: center;
-		padding-top: 15px;
-	}
-	.link_image {
-		transform: translateY(0%) !important;
-	}
-
-	.peeking {
-		display: none !important;
-	}
-
-	.last_project {
-		padding-top: 60px !important;
-	}
-	
-	.age {
-		display: none !important;
-	}
-
-	.timeline {
-		display: none !important;
-	}
-}
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) { 
-	.header_sub {
-		transform: translateY(20%);
-	}
-	.about {
-		padding: 3% 10% 9% 10% !important;
-	}
-	.timeline_circle {
-		width: 25px !important;
-		height: 25px !important;
-		margin-top: 10px !important;
-	}
-	.age {
-		display: none !important;
-	}
-	.arrow_up {
-		margin-top: 11px !important;
-	}
-	.hidden_description {
-		top: 55px !important;
-	}
-	.last_item .condensed {
-		text-align: left !important;
-		padding-left: 27px !important;
-	}
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px){ 
-	.header_sub {
-		transform: translateY(35%);
-	}
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width: 1440px) {
-	.header_sub {
-		transform: translateY(35%);
-	}
-}
-
-/* Large devices (extra large desktops, 1441px and up) */
-@media (min-width: 1441px) {
-	.header_sub {
-		transform: translateY(35%);
-	}
-}
-
 .section:hover {
 	cursor: default;
 }
@@ -233,7 +158,7 @@ a:hover {
 	font-size: 3.2em;
 }
 
-/* About styling */
+/* -------- About styling -------- */
 
 .about {
 	background-color: white;
@@ -395,7 +320,7 @@ a:hover {
 	height: 100%;
 }
 
-/* Work experience styling */
+/* -------- Experience styling --------*/
 
 .experience {
 	background-color: white;
@@ -468,7 +393,18 @@ a:hover {
 	margin-top: 1px;
 }
 
-/* Projects styling */
+.truecar {
+	max-height: 230px;
+}
+
+.cooliris {
+	max-height: 300px;
+	margin-top: -35px;
+}
+
+
+
+/* -------- Projects styling --------*/
 
 .projects {
 	background-color: white;
@@ -537,16 +473,6 @@ a:hover {
 
 .project_img:hover .more_hidden {
 	opacity: 1;
-}
-
-.list_border {
-	border-bottom: 1px solid #c2c2c2;
-	margin-bottom: 75px;
-}
-
-.beamit_image {
-	max-height: 20vh;
-	right: 2% !important;
 }
 
 /* Other Styling */
@@ -664,4 +590,95 @@ a:hover {
   font-size: 0.7em;
   color: #626E75;
   letter-spacing: 2px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+	.header_sub {
+		text-align: center;
+		padding-top: 15px;
+	}
+	.link_image {
+		transform: translateY(0%);
+	}
+	.peeking {
+		display: none;
+	}
+	.last_project {
+		padding-top: 60px;
+	}
+	.age {
+		display: none;
+	}
+	.timeline {
+		display: none;
+	}
+	.truecar {
+		max-width: 90%;
+	}
+	.cooliris {
+		margin-top: 5px;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { 
+	.header_sub {
+		transform: translateY(20%);
+	}
+	.about {
+		padding: 3% 10% 9% 10%;
+	}
+	.timeline_circle {
+		width: 25px;
+		height: 25px;
+		margin-top: 10px;
+	}
+	.age {
+		display: none;
+	}
+	.arrow_up {
+		margin-top: 11px;
+	}
+	.hidden_description {
+		top: 55px;
+	}
+	.last_item .condensed {
+		text-align: left;
+		padding-left: 27px;
+	}
+	.truecar {
+		max-width: 90%;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px){ 
+	.header_sub {
+		transform: translateY(35%);
+	}
+	.truecar {
+		max-width: 80%;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1440px) {
+	.header_sub {
+		transform: translateY(35%);
+	}
+	.truecar {
+		max-width: 67%;
+	}
+}
+
+/* Large devices (extra large desktops, 1441px and up) */
+@media (min-width: 1441px) {
+	.header_sub {
+		transform: translateY(35%);
+	}
+	.truecar {
+		margin-top: -2%;
+		max-width: 55%;
+	}
 }
