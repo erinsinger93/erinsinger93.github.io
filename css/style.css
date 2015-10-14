@@ -441,6 +441,7 @@ a:hover {
 /* -------- Projects styling --------*/
 
 .projects {
+	margin-top: -3%;
 	background-color: white;
 	background-image: url("../watercolor.png");
 	background-size: 101% 100%;
