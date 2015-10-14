@@ -2,362 +2,345 @@
 <html>
 	<head>
 		<title>Erin Singer Portfolio Site</title>
-		<link rel="stylesheet" type="text/css" href="zurb_foundation.css">
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="style.css">
-
-		<!-- jquery -->
-		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		
-		<!-- Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div id="header">
-
-			<div class="header_container auto_margin vertical_center_container">
-				<div class="header_name light">
-					erin singer
-				</div>
-				<div class="header_catch condensed">
-					WEB, UI & UX
-				</div>
-				<div class="sections">
-					<a href="#about">
-						about
-					</a>
-					<span class="dot">&middot;</span>
-					<a href="#experience">
-						experience
-					</a>
-					<span class="dot">&middot;</span>					
-					<a href="#courses">
-						courses
-					</a>
-					<span class="dot">&middot;</span>					
-					<a href="#contact"> 
-						contact 
-					</a>
+		<div id="header" class="container">
+			<div class="header_container vertical_center_container row">
+				<div class="header_name col-lg-4 col-md-5 col-sm-6 col-xs-12"></div>
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+				<div class="header_sub col-lg-7 col-md-6 col-sm-5 col-xs-12">
+					<div class="header_catch condensed row">
+						<div class="col-md-12 thick">
+							WEB, UI & UX
+						</div>
+					</div>
+					<div class="sections row">
+						<div class="col-md-12">
+							<a href="#about">
+								about
+							</a>
+							<span class="dot">&middot;</span>
+							<a href="#experience">
+								experience
+							</a>
+							<span class="dot">&middot;</span>					
+							<a href="#projects">
+								projects
+							</a>
+							<span class="dot">&middot;</span>					
+							<a href="#other">
+								other
+							</a>
+							<span class="dot">&middot;</span>					
+							<a href="#contact"> 
+								contact 
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>	
 
 			<div class="header_image">
-			</div>
-			
+			</div>		
 		</div>
 
+		<!-- About section -->
 		<a name="about"></a>
-			<div class="section about relative">	
-				<div class="profile_container">
-					<div class="vertical_center_container">
-						<div class="condensed centered section_title">
-							ABOUT
+		<div class="section about relative">	
+			
+			<h2 class="section_title hidden-xs condensed">
+				I've always loved creating things
+			</h2>
+
+			<!-- Timeline -->
+			<div class="artistic_line timeline">
+				<div class="row auto_margin">
+					
+					<!-- Age 3 -->
+					<div class="col-md-1 col-sm-1 timeline_item">
+						<div class="timeline_circle auto_margin"></div>
+						<div class="age condensed">
+							AGE 3
 						</div>
-						<img class="profile_image" src="profile_img.png" />
-						<div>
-							<div class="condensed medium weird_margin">
-								STANFORD<br/>
-								SENIOR <br/>
-								CS + <br/>
-								HCI
+						<div class="hidden_description">
+							<div class="row">
+								<div class="visible-sm col-sm-12 condensed">
+									AGE 3
+								</div>
+								<div class="col-md-12">
+									I got my first sketchbook
+								</div>
 							</div>
 						</div>
+						<div class="arrow_up auto_margin"></div>
+						<div class="arrow_fill auto_margin"></div>
 					</div>
-				</div>
 
-				<div class="mobile_profile_container centered">
-					<div class="condensed section_title">
-						ABOUT
-					</div>
-					<img class="mobile_profile_image" src="profile_img.png" />
-				</div>
-
-				<span class="about_text">
-					<div class="body_text">
-						I am a junior at Stanford University studying Computer Science with a concentration in Human-Computer Interaction. Maybe it all began with building elaborate sand castles on the beaches of San Diego close to where I grew up, but I've always loved to create & design.<br/><br/>Before falling in love with Computer Science, I studied Neuroscience and Psychology and learned to appreciate how our brains help us perceive the world- including design. This knowledge now plays an integral role in my design process.<br/><br/>When I'm not programming and designing, I like to play retro videogames, watch Marvel movies, play softball, and listen to 80's music.
-						<div class="resume">
-							<a href="SummerResume2015.pdf">
-								view resume 
-								<i class="fa fa-angle-double-right"></i>
-							</a>
+					<!-- Age 4 -->
+					<div class="col-md-1 col-sm-1 timeline_item">
+						<div class="timeline_circle auto_margin"></div>
+						<div class="age condensed">
+							AGE 4
 						</div>
-					</div>
-				</span>
-				
-			</div>
-
-		<a name="experience">
-			<div class="section experience">	
-				<div class="section_title condensed">
-					EXPERIENCE
-				</div>
-				
-				<div class="experience_box list_border notemap relative">
-
-					<div class="experience_text">
-						<p>
-							<div class="experience_header">
-								<a href="https://www.notemap.co" class="experience_title medium">NOTEMAP</a> 
-								<span class="medium light">&nbsp; | &nbsp;</span>
-								<span class="experience_timeline condensed">APR 2015 - PRESENT</span>
+						<div class="hidden_description">
+							<div class="row">
+								<div class="visible-sm col-sm-12 condensed">
+									AGE 4
+								</div>
+								<div class="col-md-12">
+									My parents received a call home because I'd fingerpainted the classroom door
+								</div>
 							</div>
-							NoteMap is a platform designed to help programmers and programming students better annotate and take notes on code. NoteMap boasts a dual interface that features both a text editor and code editor with functionality to 'link' content between the two. I worked as the primary UI/UX designer and as one of the front-end developers on our team of three students. NoteMap was originally created for a Stanford senior project assignment and went on to win an award at the Stanford senior project fair. We plan to finish developing NoteMap and officially launch it this coming fall, though our site is currently live and fully functional. <br/>
-							<div class="experience_footer condensed">
-								<a href="http://www.notemap.co">
-									WWW.NOTEMAP.CO
-								</a>
-								<span>&nbsp; | &nbsp;</span>
-								<a href="https://www.notemap.co/about" class="experience_link">
-									LINK TO PROJECT ITERATION
-								</a>
-							</div>
-
-						</p>
+						</div>
+						<div class="arrow_up auto_margin"></div>
+						<div class="arrow_fill auto_margin"></div>
 					</div>
 
-					<div class="experience_image_container link_image">
-						<img class="vertical_center_container absolute" src="linking-hmpg-icon.png" />
+					<!-- Break -->
+					<div class="col-md-1 col-sm-1"></div>
+					
+					<!-- Age 10 -->
+					<div class="col-md-1 col-sm-1 timeline_item">
+						<div class="timeline_circle auto_margin"></div>
+						<div class="age condensed">
+							AGE 10
+						</div>
+						<div class="hidden_description">
+							<div class="row">
+								<div class="visible-sm col-sm-12 condensed">
+									AGE 10
+								</div>
+								<div class="col-md-12">
+									I got the coolest birthday gift ever: Photoshop
+								</div>
+							</div>
+						</div>
+						<div class="arrow_up auto_margin"></div>
+						<div class="arrow_fill auto_margin"></div>
 					</div>
-					<img class="mobile_experience_image linked_mobile auto_margin experience_image" src="linking-hmpg-icon.png" />
 
-				</div>
-
-				<div class="experience_box list_border relative">
-					<div class="experience_text">
-						<p>
-							<div class="experience_header">
-								<a href="https://www.tutera.co" class="experience_title medium">TUTERA</a> 
-								<span class="medium light">&nbsp; | &nbsp;</span>
-								<span class="experience_timeline condensed">SEPT 2014 - DEC 2014</span>
+					<!-- Break -->
+					<div class="col-md-1 col-sm-1"></div>
+					
+					<!-- Age 13 -->
+					<div class="col-md-1 col-sm-1 timeline_item">
+						<div class="timeline_circle auto_margin"></div>
+						<div class="age condensed">
+							AGE 13
+						</div>
+						<div class="hidden_description">
+							<div class="row">
+								<div class="visible-sm col-sm-12 condensed">
+									AGE 13
+								</div>
+								<div class="col-md-12">
+									I learned basic HTML to make MySpace layouts
+								</div>
 							</div>
-							Tutera is a mobile-optimized webapp that aims to radically simplify the tutoring experience by streamlining the process from finding and meeting with a tutor to dealing with payment and feedback. I am the primary designer and front-end developer for Tutera. Though Tutera was originally designed for a Stanford course on Human-Computer Interaction, my team of four went above and beyond to almost fully implement an interface that is complete with a back-end. Screenshots of all pages I helped design can be found 
-							<a href="https://www.flickr.com/photos/128269891@N07/sets/72157648849050539/" class="experience_link">HERE.</a><br/>
-							<div class="experience_footer condensed">
-								<a href="http://stanford.edu/class/cs147/projects/learning/tutera/" class="experience_link">
-									LINK TO PROJECT SITE
-								</a>
-								<span>&nbsp; | &nbsp;</span>
-								<a href="https:www.tutera.co" class="experience_link">
-									LINK TO DEMO
-								</a>
-							</div>
+						</div>
+						<div class="arrow_up auto_margin"></div>
+						<div class="arrow_fill auto_margin"></div>
+					</div>
 
-						</p>
+					<!-- Age 14 -->
+					<div class="col-md-1 col-sm-1 timeline_item">
+						<div class="timeline_circle auto_margin"></div>
+						<div class="age condensed">
+							AGE 14
+						</div>
+						<div class="hidden_description">
+							<div class="row">
+								<div class="visible-sm col-sm-12 condensed">
+									AGE 14
+								</div>
+								<div class="col-md-12">
+									I started taking drawing and painting classes
+								</div>
+							</div>
+						</div>
+						<div class="arrow_up auto_margin"></div>
+						<div class="arrow_fill auto_margin"></div>
 					</div>
 					
-					<div class="experience_image_container">
-						<img class="tutera_image absolute" src="iPhoneTuteraMockup.png" />
+					<!-- Break -->
+					<div class="col-md-1 col-sm-1"></div>
+					
+					<!-- Age 19 -->
+					<div class="col-md-1 col-sm-1 timeline_item">
+						<div class="timeline_circle auto_margin"></div>
+						<div class="age condensed">
+							AGE 19
+						</div>
+						<div class="hidden_description">
+							<div class="row">
+								<div class="visible-sm col-sm-12 condensed">
+									AGE 19
+								</div>
+								<div class="col-md-12">
+									I realized computer science and human computer interaction were all the things I love rolled into one
+								</div>
+							</div>
+						</div>
+						<div class="arrow_up auto_margin"></div>
+						<div class="arrow_fill auto_margin"></div>
 					</div>
-					<img class="mobile_experience_image auto_margin tutera_image" src="iPhoneTuteraMockup.png" />					
-				</div>
 
-				<div class="experience_box relative">
-					<div class="experience_text">	
-						<p>
-							<div class="experience_header">
-								<a href="https://www.cooliris.com/cooliris-app/" class="experience_title medium">COOLIRIS</a> 
-								<span class="medium light">&nbsp; | &nbsp;</span>
-								<span class="experience_timeline condensed">APRIL 2014 - SEPT 2014</span>
-							</div>
-							Recently acquired by Yahoo, Cooliris develops photo viewing products for both mobile and web platforms. When I began working for Cooliris mid-sophomore year, Cooliris was in the process of creating the app BeamIt. BeamIt is a photo messaging app that allows users to send up to thousands of high resolution photos at one time in private or group messages. I helped style the web application of BeamIt (now in beta) and helped build the website promoting the IOS application of Beamit. Screenshots of some of these contributions can be found <a href="https://www.flickr.com/photos/128269891@N07/sets/72157648857405468/" class="experience_link">HERE.</a>
-							<br/>
-							<div class="experience_footer condensed">
-								<a href="https://www.cooliris.com/cooliris-app/" class="experience_link">
-									LINK TO COOLIRIS SITE
-								</a>
-								<span>&nbsp; | &nbsp;</span>
-								<a href="https://beamitapp.com/" class="experience_link">
-									LINK TO BEAMIT SITE
-								</a>
-							</div>
-						</p>
+					<!-- Now! -->
+					<div class="col-md-2 col-sm-2 timeline_item last_item">
+						<div class="timeline_profile_circle auto_margin"></div>
+						<div class="condensed">
+							STANFORD SENIOR<br/>
+							CS + HCI
+						</div>
 					</div>
-					<div class="experience_image_container beamit_image">
-						<img class="vertical_center_container absolute" src="beamit-app.png" />
-					</div>
-					<img class="mobile_experience_image beamit_mobile auto_margin experience_image" src="beamit-app.png" />
+
 				</div>
 			</div>
-		</a>
-
-		<a name="courses">
-			<div class="section courses">	
-				<div class="section_title condensed medium_margin_bottom mobile_center ">
-					COURSES
+			<!-- End timeline -->	
+			<div class="mobile_about row visible-xs">
+				<div class="col-xs-12">
+					<div class="timeline_profile_circle auto_margin"></div>
+					<h2 class="condensed large centered">
+						STANFORD SENIOR<br/>
+						CS + HCI
+					</h2>
 				</div>
-				<div class="big_list auto_margin relative">
-					<div class="course_list">
-						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs+147%3A+introduction+to+human+computer+interaction+design&collapse=">
-							<div class="course_col col1 centered">
-								<span class="large condensed class_title">CS147</span>
-								<br/>
-								Intro to Human-Computer Interaction & Design
-							</div>
-						</a>
-						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs+142%3A+web+applications&collapse=">	
-							<div class="course_col col2 absolute centered">
-								<span class="large condensed class_title">CS142</span>
-								<br/>
-								Web Applications with HTML, CSS, & JavaScript
-							</div>
-						</a>
-						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs193p%3A+iphone+and+ipad+application+programming&collapse=">	
-							<div class="course_col col3 absolute centered">
-								<span class="large condensed class_title">CS193P</span>
-								<br/>
-								iPhone and iPad Application Programming
-							</div>
-						</a>
-					</div>
-				</div>
+			</div>	
+		</div>
+		<!-- End about -->
 
-				<div class="big_list auto_margin relative">
-					<div class="course_list">
-						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs106b%3A+programming+abstractions&collapse=">	
-							<div class="course_col col1 centered">
-								<span class="large condensed class_title">CS106B</span>
-								<br/>
-								Programming Abstractions in C++
-							</div>
-						</a>
-						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs107+computer+organization+and+systems&collapse=">	
-							<div class="course_col col2 absolute centered">
-								<span class="large condensed class_title">CS107</span>
-								<br/>
-								Computer Organizations and Systems in C
-							</div>
-						</a>
-						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs110&collapse=">	
-							<div class="course_col col3 absolute centered">
-								<span class="large condensed class_title">CS110</span>
-								<br/>
-								Principles of Computer Systems
-							</div>
-						</a>
-					</div>
-				</div>
 
-				<div class="big_list auto_margin relative">
-					<div class="course_list">
-						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=CS103%3A+mathematical+foundations+of+computing&collapse=">
-							<div class="course_col col1 centered">
-								<span class="large condensed class_title">CS103</span>
-								<br/>
-								Mathematical Foundations of Computing
-							</div>
-						</a>
-						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=CS109%3A+introduction+to+probability+for+computer+scientists&collapse=">	
-							<div class="course_col col2 absolute centered">
-								<span class="large condensed class_title">CS109</span>
-								<br/>
-								Probability and Statistics
-							</div>
-						</a>
-						<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=CS+161%3A+Design+and+Analysis+of+Algorithms&collapse=">
-							<div class="course_col col3 absolute centered">
-								<span class="large condensed class_title">CS161</span>
-								<br/>
-								Design and Analysis of Algorithms
-							</div>
-						</a>
-					</div>
-				</div>
+		<!-- Experience Section -->
+		<a name="experience"></a>
+		<div class="section experience">	
+			<h2 class="section_title condensed">
+				Work Experience
+			</h2>
+			<div class="artistic_line experience_line">
+				<div class="peeking"></div>
+			</div>
 
-				<div class="little_list">
-					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs+147%3A+introduction+to+human+computer+interaction+design&collapse=">	
-						<div class="centered auto_margin little_card">
-							<div class="vertical_center_container">
-								<span class="large condensed class_title">CS147</span>
-								<br/>
-								Intro to Human-Computer Interaction & Design
-							</div>
+			<div class="relative row">
+				<div class="experience_text col-md-6 col-sm-6 col-xs-12">	
+					<p>
+						<div class="experience_header">
+							<a href="https://www.truecar.com" class="experience_title">TRUECAR</a> 
+							<span class="medium light">&nbsp; | &nbsp;</span>
+							<span class="experience_timeline condensed">JUN 2015 - AUG 2015</span><br/>
+							<span class="position">UI/UX/FRONTEND INTERN</span>
 						</div>
-					</a>
-					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs+142%3A+web+applications&collapse=">
-						<div class="centered auto_margin little_card">
-							<div class="vertical_center_container">
-								<span class="large condensed class_title">CS142</span>
-								<br/>
-								Web Applications with HTML, CSS, & JavaScript
-							</div>
+						<p>Designed and built a frontend prototype for a website where car manufacturers can view performance analytics and manage their TrueCar experience. Won the intern award for "Best Overall Execution"</p>
+						<div class="experience_footer">
+							<a href="truecar.html" class="experience_link"> SEE MORE <i class="fa fa-angle-double-right"></i></a>
 						</div>
-					</a>
-					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs193p%3A+iphone+and+ipad+application+programming&collapse=">	
-						<div class="centered auto_margin little_card">
-							<div class="vertical_center_container">
-								<span class="large condensed class_title">CS193P</span>
-								<br/>
-								iPhone and iPad Application Programming
-							</div>
-						</div>
-					</a>
-					
-					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs106b%3A+programming+abstractions&collapse=">
-						<div class="centered auto_margin little_card">
-							<div class="vertical_center_container">
-								<span class="large condensed class_title">CS106B</span>
-								<br/>
-								Programming Abstractions in C++
-							</div>
-						</div>
-					</a>
-					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs107+computer+organization+and+systems&collapse=">	
-						<div class="centered auto_margin little_card">
-							<div class="vertical_center_container">
-								<span class="large condensed class_title">CS107</span>
-								<br/>
-								Computer Organization and Systems in C
-							</div>
-						</div>
-					</a>
-					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=cs110&collapse=">	
-						<div class="centered auto_margin little_card">
-							<div class="vertical_center_container">
-								<span class="large condensed class_title">CS110</span>
-								<br/>
-								Principles of Computer Systems
-							</div>
-						</div>
-					</a>
-					
-					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=CS103%3A+mathematical+foundations+of+computing&collapse=">	
-						<div class="centered auto_margin little_card">
-							<div class="vertical_center_container">
-								<span class="large condensed class_title">CS103</span>
-								<br/>
-								Mathematical Foundations of Computing
-							</div>
-						</div>
-					</a>
-					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=CS109%3A+introduction+to+probability+for+computer+scientists&collapse=">	
-						<div class="centered auto_margin little_card">
-							<div class="vertical_center_container">
-								<span class="large condensed class_title">CS109</span>
-								<br/>
-								Probability and Statistics
-							</div>
-						</div>
-					</a>
-					<a href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=CS+161%3A+Design+and+Analysis+of+Algorithms&collapse=">
-						<div class="centered auto_margin little_card">
-							<div class="vertical_center_container">
-								<span class="large condensed class_title">CS161</span>
-								<br/>
-								Design and Analysis of Algorithms
-							</div>
-						</div>
-					</a>
+					</p>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<img class="truecar img-responsive auto_margin" src="truecar_car2.jpg" />
 				</div>
 			</div>
-		</a>
+			<br/><br/><br/><br/>
+			<div class="relative row">
+				<div class="experience_text col-md-6 col-sm-6 col-xs-12">	
+					<p>
+						<div class="experience_header">
+							<span class="experience_title">COOLIRIS</span> 
+							<span class="medium light">&nbsp; | &nbsp;</span>
+							<span class="experience_timeline condensed">APRIL 2014 - SEPT 2014</span><br/>
+							<span class="position">CSS DEVELOPER INTERN</span>
+						</div>
+						Recently acquired by Yahoo, Cooliris developed photo viewing products for both mobile and web platforms. I worked on one of their products, BeamIt, where I helped style the BeamIt web application and helped build the website promoting Beamit.
+						<br/>
+						<!-- <div class="experience_footer">
+							<a href="#" class="experience_link"> SEE MORE <i class="fa fa-angle-double-right"></i></a>
+						</div> -->
+					</p>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<img class="cooliris img-responsive auto_margin" src="cooliris_sketch.jpg" />
+				</div>
+			</div>
+		</div>
 
+
+		<!-- Project section -->
+		<a name="projects"></a>
+		<div class="section projects">	
+			<div class="section_title condensed thick">
+				Projects
+			</div>
+			<div class="artistic_line"></div>
+			<div class="row">
+				<div class="col-md-2 col-sm-0"></div>
+				<div class="col-md-4 col-sm-6 project centered">
+					<a href="http://www.notemap.co">	
+						<p class="condensed">NoteMap</p>
+						<p><div class="project_img notemap auto_margin">
+							<div class="see_more position more_hidden">SEE MORE</div>
+						</div></p>
+						<div class="catch">A programmer's<br/>favorite notebook</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 project last_project centered">
+					<a href="http://www.tutera.co">	
+						<p class="condensed">Tutera</p>
+						<p><div class="project_img tutera auto_margin">
+							<div class="see_more position more_hidden">SEE MORE</div>
+						</div></p>
+						<div class="catch">Connecting helpful tutors to<br/>hardworking students</div>
+					</a>
+				</div>
+				<div class="col-md-2 col-sm-0"></div>
+			</div>
+		</div>
+
+
+		<!-- Other section -->
+		<a name="other"></a>
+		<div class="section other">	
+			<div class="section_title condensed">
+				Other Things I Do
+			</div>
+			<div class="artistic_line"></div>
+
+			<div class="experience_header">
+				<div class="row">
+					<div class="col-md-6">
+						<a href="http://hci.stanford.edu/courses/cs147/2015/au/" class="other_title">STANFORD COURSE ASSISTANT</a><br/>
+						<span class="position">CS147: INTRO HCI + DESIGN</span><br/>
+						<span class="experience_timeline condensed">SEPT 2015 - CURRENT</span>
+					</div>
+					<br class="visible-xs visible-sm"/>
+					<div class="col-md-6">
+						<a href="http://designconsulting.co/" class="other_title">STANFORD DESIGN CONSULTING</a><br/>
+						<span class="position">STUDENT MEMBER</span><br/>
+						<span class="experience_timeline condensed">JAN 2015 - CURRENT</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Contact Section -->
 		<a name="contact"></a>
+
+		<!-- Large and medium footer -->
 		<div class="footer small_footer">
 		  <div class="contact_header col condensed">
 		    CONTACT
 		  </div>
-
 		  <div class="col big">
 		    <div>
 					<i class="fa fa-envelope-o"></i>
@@ -372,12 +355,11 @@
 					</a>
 				</div>
 		  </div>
-
 		 	<div class="col">
 	  		<div>
-					<i class="fa fa-flickr"></i>
-					<a href="https://www.flickr.com/photos/128269891@N07/sets/">
-						&nbsp;FLICKR
+					<i class="fa fa-github"></i>
+					<a href="https://github.com/erinsinger93">
+						&nbsp;ERINSINGER93
 					</a>
 				</div>
 	  		<div class="relative">
@@ -389,7 +371,7 @@
 			</div>
 		</div>
 
-
+		<!-- Small and xs small footer -->
 		<div class="footer mobile_footer">
 			<div class="contact_header condensed">
 		    CONTACT
@@ -407,9 +389,9 @@
 				</a>
 			</div>
 			<div class="col">
-				<i class="fa fa-flickr"></i>
-				<a href="https://www.flickr.com/photos/128269891@N07/sets/" class="footer_text">
-					&nbsp;FLICKR
+				<i class="fa fa-github"></i>
+				<a href="https://github.com/erinsinger93" class="footer_text">
+					&nbsp;ERINSINGER93
 				</a>
 			</div>
 			<div class="col relative">
@@ -420,6 +402,9 @@
 			</div>
 		</div>
 
+
+		<!-- Scripts -->
+		<script src="js/jquery.js"></script>
 		<script>
 			$(document).ready(function(){
 				$('a[href^="#"]').on('click',function (e) {
@@ -428,7 +413,7 @@
 	    		$('html, body').stop().animate({
 	        	'scrollTop': target.offset().top
 	    		}, 900, 'swing', function () {
-	        	window.location.hash = target;
+	        	window.location.hash = target[0].name;
 	    		});
 				});
 			});
