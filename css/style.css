@@ -292,7 +292,6 @@ a:hover {
 
 .timeline_circle:hover {
 	border: 3px solid #00B4D6 !important;
-	cursor: pointer;
 }
 
 .timeline_circle:hover + .age {
