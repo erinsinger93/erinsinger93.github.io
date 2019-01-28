@@ -1,0 +1,195 @@
+html, body {
+  min-height: 100%;
+  height: 100%;
+  margin: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  overflow: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  background-color: #1B050A; }
+
+a {
+  color: #333;
+  text-decoration: none !important;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out; }
+
+/* Header */
+.header {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  z-index: 1;
+  background: url("../watercolor-3.jpg") no-repeat center/100% 100%; }
+
+.header__banner {
+  position: relative;
+  z-index: 2;
+  top: 47%;
+  padding: 20px;
+  color: white;
+  background-color: rgba(27, 5, 10, 0.85); }
+
+.header__name {
+  background: url("../sketched-name.png") center/contain no-repeat;
+  height: 200px;
+  z-index: 2;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3; }
+
+.header__subtitle-and-navigation {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2; }
+
+.header__subtitle {
+  font-size: 38px;
+  margin: 0 0 4px; }
+
+.header__nav {
+  font-size: 18px;
+  margin-left: 4px;
+  color: white; }
+
+.header__nav-item.header__nav-item {
+  color: white; }
+  .header__nav-item.header__nav-item:hover {
+    color: #64aec9; }
+
+.section {
+  padding: 5% 10%; }
+
+.section__title {
+  font-size: 24px;
+  margin: 0;
+  padding: 12px 0; }
+
+/* About section */
+.about {
+  background-color: white;
+  height: 400px;
+  position: relative;
+  margin-top: -2px; }
+
+.timeline {
+  width: 80%;
+  position: absolute; }
+
+.timeline__line {
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  z-index: -1;
+  background: url("../artistic_line.png") no-repeat top/100% 15px; }
+
+.timeline__marker {
+  position: absolute;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #64aec9;
+  border-radius: 50%;
+  border: 3px solid #333;
+  -webkit-transition: 1.5s;
+  transition: 1.5s; }
+
+.timeline__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.timeline__indicator {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  border: 3px solid #333;
+  border-radius: 50%;
+  background-color: white; }
+  .timeline__indicator:hover {
+    cursor: pointer; }
+
+/* Media queries */
+/* Mobile */
+@media (max-width: 768px) {
+  .header {
+    background: url("../watercolor.jpg") no-repeat center/auto 100%; }
+  .header__banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .header__name {
+    width: 100%;
+    margin-bottom: 0; }
+  .header__subtitle-and-navigation {
+    text-align: center; }
+  .header__subtitle {
+    font-size: 34px; }
+  .header-nav {
+    font-size: 16px; } }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    background: url("../watercolor.jpg") no-repeat center/auto 100%; } }
+
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+/* Large devices (extra large desktops, 1441px and up) */
+/* Utility classes */
+.vertically-centered {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.horizontally-centered {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.vh-centered {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%; }
+
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-shrink-0 {
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+
+.flex-grow-1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.text-align-center {
+  text-align: center; }
+
+.experience__truecar {
+  background-color: white; }
+
+.truecar {
+  max-height: 230px; }
+
+.cooliris {
+  max-height: 400px; }
