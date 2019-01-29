@@ -4,6 +4,7 @@
 		<title>Erin Singer Portfolio Site</title>
     <!-- CSS -->
     <link href="dist/main.css" rel="stylesheet">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Viewport -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui" />
@@ -43,7 +44,7 @@
 
 	<!-- About section -->
 	<a name="about"></a>
-	<div class="section about">	
+	<div class="section section--about">	
 		<h2 class="section__title">
 			I've always loved creating things
 		</h2>
@@ -73,12 +74,63 @@
 		</div>
 	</div>
 
-	<div class="experience__truecar">
-		<img class="truecar img-responsive auto_margin" src="truecar_car_color.png" />
-		<br/>
-		<img class="cooliris img-responsive auto_margin" src="cooliris_sketch.png" />
-	</div>
 
+	<!-- Experience section -->
+	<a name="experience"></a>
+	<div class="section section--experience">	
+		<h2 class="section__title">
+			Work Experience
+		</h2>
+
+		<div class="experience display-flex align-items-center">
+			<div class="experience__text">
+				<div class="display-flex align-items-center">
+					<a href="truecar.html" aria-label="Software Engineer at LinkedIn from July 2016 to June 2018" class="experience__title">LINKEDIN</a> 
+					<span class="experience__divider" aria-hidden="true">&nbsp; | &nbsp;</span>
+					<span class="experience__timeline" aria-hidden="true">JUL 2016 - PRESENT</span>
+				</div>
+				<span class="experience__job-title" aria-hidden="true">SR SOFTWARE ENGINEER</span>
+				<p class="experience__description serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				<div class="experience__footer">
+					<a href="truecar.html" class="experience__link"> SEE MORE <i class="fa fa-angle-double-right"></i></a>
+				</div>
+			</div>
+			<div class="experience__img-container"><img class="experience__img experience__img--cooliris img-responsive" src="cooliris_sketch.png" /></div>
+		</div>
+
+		<div class="experience display-flex align-items-center">
+			<div class="experience__text">
+				<div class="display-flex align-items-center">
+					<a href="truecar.html" aria-label="UI/UX/Frontend Intern at Truecar from June 2015 to August 2015" class="experience__title">TRUECAR</a> 
+					<span class="experience__divider" aria-hidden="true">&nbsp; | &nbsp;</span>
+					<span class="experience__timeline" aria-hidden="true">JUN 2015 - AUG 2015</span>
+				</div>
+				<span class="experience__job-title" aria-hidden="true">UI/UX/FRONTEND INTERN</span>
+				<p class="experience__description serif">Designed and built a frontend prototype for a website where car manufacturers can view performance analytics and manage their TrueCar experience. Won the intern award for "Best Overall Execution"</p>
+				<div class="experience__footer">
+					<a href="truecar.html" class="experience__link"> SEE MORE <i class="fa fa-angle-double-right"></i></a>
+				</div>
+			</div>
+			<div class="experience__img-container"><img class="experience__img experience__img--truecar img-responsive" src="truecar_car_color.png" /></div>
+		</div>
+
+		<div class="experience display-flex align-items-center">
+			<div class="experience__text">
+				<div class="display-flex align-items-center">
+					<a href="truecar.html" aria-label="CSS Developer Intern at Cooliris from April 2014 to Sept 2014" class="experience__title">COOLIRIS</a> 
+					<span class="experience__divider" aria-hidden="true">&nbsp; | &nbsp;</span>
+					<span class="experience__timeline" aria-hidden="true">APR 2014 - SEPT 2014</span>
+				</div>
+				<span class="experience__job-title" aria-hidden="true">CSS DEVELOPER INTERN</span>
+				<p class="experience__description serif">Acquired by Yahoo in 2016, Cooliris developed photo viewing products for both mobile and web platforms. I worked on one of their products, BeamIt, where I helped style the BeamIt web application and helped build the website promoting Beamit.</p>
+				<div class="experience__footer">
+					<a href="truecar.html" class="experience__link"> SEE MORE <i class="fa fa-angle-double-right"></i></a>
+				</div>
+			</div>
+			<div class="experience__img-container"><img class="experience__img experience__img--cooliris img-responsive" src="cooliris_sketch.png" /></div>
+		</div>
+	</div>
+	
 	<!-- Scripts -->
 		<script src="js/jquery.js"></script>
 		<script>

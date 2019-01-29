@@ -16,6 +16,8 @@ a {
   text-decoration: none !important;
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out; }
+  a:hover {
+    color: #64aec9; }
 
 /* Header */
 .header {
@@ -57,24 +59,23 @@ a {
 
 .header__nav-item.header__nav-item {
   color: white; }
-  .header__nav-item.header__nav-item:hover {
-    color: #64aec9; }
 
+/* -------- Section styling --------*/
 .section {
-  padding: 5% 10%; }
+  padding: 5% 10%;
+  background-color: white; }
+
+.section--about {
+  height: 400px;
+  position: relative;
+  margin-top: -2px; }
 
 .section__title {
   font-size: 24px;
   margin: 0;
   padding: 12px 0; }
 
-/* About section */
-.about {
-  background-color: white;
-  height: 400px;
-  position: relative;
-  margin-top: -2px; }
-
+/* -------- About styling --------*/
 .timeline {
   width: 80%;
   position: absolute; }
@@ -112,11 +113,65 @@ a {
   .timeline__indicator:hover {
     cursor: pointer; }
 
+/* -------- Experience styling --------*/
+.experience {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 24px 0 48px; }
+
+.experience__text {
+  width: 50%;
+  padding-right: 32px; }
+
+.experience__title {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 800; }
+
+.experience__divider {
+  -ms-flex-item-align: baseline;
+      align-self: baseline; }
+
+.experience__line {
+  z-index: 0; }
+
+.experience__timeline {
+  font-size: 16px;
+  font-weight: 600; }
+
+.experience__job-title {
+  display: block;
+  font-size: 16px;
+  margin-top: 4px;
+  letter-spacing: 1px; }
+
+.experience__description {
+  margin: 12px 0; }
+
+.experience__footer {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 700; }
+
+.experience__img-container {
+  width: 50%; }
+
+.experience__img {
+  max-width: 90%;
+  margin: auto; }
+
+.experience__img--truecar {
+  max-height: 180px; }
+
+.experience__img--cooliris {
+  max-height: 300px; }
+
 /* Media queries */
 /* Mobile */
 @media (max-width: 768px) {
   .header {
-    background: url("../watercolor.jpg") no-repeat center/auto 100%; }
+    background: url("../watercolor-3.jpg") no-repeat center/auto 100%; }
   .header__banner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -130,12 +185,25 @@ a {
   .header__subtitle {
     font-size: 34px; }
   .header-nav {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .section {
+    padding: 5% 5%; }
+  .experience {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 24px 0 64px; }
+  .experience__text {
+    width: auto; }
+  .experience__img-container {
+    width: auto;
+    margin-top: 16px; } }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
   .header {
-    background: url("../watercolor.jpg") no-repeat center/auto 100%; } }
+    background: url("../watercolor-3.jpg") no-repeat center/auto 100%; } }
 
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
@@ -185,11 +253,9 @@ a {
 .text-align-center {
   text-align: center; }
 
-.experience__truecar {
-  background-color: white; }
+.img-responsive {
+  display: block;
+  height: auto; }
 
-.truecar {
-  max-height: 230px; }
-
-.cooliris {
-  max-height: 400px; }
+.serif {
+  font-family: Georgia, Times, "Times New Roman", serif; }
