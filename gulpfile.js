@@ -10,7 +10,7 @@ var concat = require('gulp-concat');
 
 // compile sass to css
 gulp.task('sass', function () {
-  return gulp.src('./css/*.scss')
+  return gulp.src(['./css/utilities.scss', './css/style.scss'])
     .pipe(plumber({errorHandler: notify.onError("Sass error: <%= error.message %>")}))
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({ // make sure we add vendor prefixes!

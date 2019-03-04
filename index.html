@@ -10,6 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui" />
 	</head>
 	<body>
+	<div class="background"></div>
 
 	<header class="header">
 		<div class="header__banner vertically-centered display-flex align-items-center">
@@ -25,14 +26,6 @@
 						experience
 					</a>
 					<span class="dot" aria-hidden="true">&middot;</span>					
-					<a href="#projects" class="header__nav-item" aria-label="Erin's projects">
-						projects
-					</a>
-					<span class="dot" aria-hidden="true">&middot;</span>					
-					<a href="#other" class="header__nav-item" >
-						other
-					</a>
-					<span class="dot" aria-hidden="true">&middot;</span>					
 					<a href="#contact" class="header__nav-item" aria-label="Contact Erin"> 
 						contact 
 					</a>
@@ -41,39 +34,66 @@
 		</div>
 	</header>
 
-
 	<!-- About section -->
 	<a name="about"></a>
 	<div class="section section--about">	
-		<h2 class="section__title">
+		<h2 class="section__title section__title--about">
 			I've always loved creating things
 		</h2>
 
 		<div class="timeline__container">
 			<div class="timeline vh-centered">
-				<div class="timeline__marker vertically-centered"></div>
+				<div class="timeline__marker vertically-centered">
+					<div class="dragon"></div>
+				</div>
 				<div class="timeline__line vh-centered"></div>
 				<div class="timeline__items display-flex">
 					<div class="timeline__item">
-						<div class="timeline__indicator"></div>
+						<div class="timeline__indicator" data-step-id="0"></div>
+						<div class="timeline__step-title">Age 3</div>
 					</div>
 					<div class="timeline__item">
-						<div class="timeline__indicator"></div>
+						<div class="timeline__indicator" data-step-id="1"></div>
+						<div class="timeline__step-title">Age 10</div>
 					</div>
 					<div class="timeline__item">
-						<div class="timeline__indicator"></div>
+						<div class="timeline__indicator" data-step-id="2"></div>
+						<div class="timeline__step-title">Age 13</div>
 					</div>
 					<div class="timeline__item">
-						<div class="timeline__indicator"></div>
+						<div class="timeline__indicator" data-step-id="3"></div>
+						<div class="timeline__step-title">Age 19</div>
 					</div>
 					<div class="timeline__item">
-						<div class="timeline__indicator"></div>
+						<div class="timeline__indicator" data-step-id="4"></div>
+						<div class="timeline__step-title">Age 22</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="timeline__step-descriptions display-flex">
+			<div class="timeline__step-description">
+				<h3 class="timeline__step-description-title">Age 3</h3>
+				<p class="serif">I got my first sketchbook</p>
+			</div>
+			<div class="timeline__step-description hidden">
+				<h3 class="timeline__step-description-title">Age 10</h3>
+				<p class="serif">I got the coolest birthday gift ever: Photoshop</p>
+			</div>
+			<div class="timeline__step-description hidden">
+				<h3 class="timeline__step-description-title">Age 13</h3>
+				<p class="serif">I learned basic HTML to make MySpace layouts</p>
+			</div>
+			<div class="timeline__step-description hidden">
+				<h3 class="timeline__step-description-title">Age 19</h3>
+				<p class="serif">I realized computer science and human computer interaction were all the things I love rolled into one</p>
+			</div>
+			<div class="timeline__step-description hidden">
+				<h3 class="timeline__step-description-title">Age 22</h3>
+				<p class="serif">I graduated from Stanford with a BS in Computer Science concentrating in Human Computer Interaction. Then I started my first full-time job at LinkedIn!</p>
+			</div>
+		</div>
 	</div>
-
 
 	<!-- Experience section -->
 	<a name="experience"></a>
@@ -85,20 +105,39 @@
 		<div class="experience display-flex align-items-center">
 			<div class="experience__text">
 				<div class="display-flex align-items-center">
-					<a href="truecar.html" aria-label="Software Engineer at LinkedIn from July 2016 to June 2018" class="experience__title">LINKEDIN</a> 
+					<a href="truecar.html" aria-label="Senior Software Engineer at LinkedIn from June 2018 to present" class="experience__title">LINKEDIN</a> 
 					<span class="experience__divider" aria-hidden="true">&nbsp; | &nbsp;</span>
-					<span class="experience__timeline" aria-hidden="true">JUL 2016 - PRESENT</span>
+					<span class="experience__timeline" aria-hidden="true">JUN 2018 - PRESENT</span>
 				</div>
 				<span class="experience__job-title" aria-hidden="true">SR SOFTWARE ENGINEER</span>
-				<p class="experience__description serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				<div class="experience__footer">
-					<a href="truecar.html" class="experience__link"> SEE MORE <i class="fa fa-angle-double-right"></i></a>
+				<ul class="experience__description experience__description--current-role serif">
+					<li>Led the web effort to move Search on LinkedIn to a new API (Ember, Handlebars, Sass)</li>
+					<li>Led the effort to address Search web accessibility issues to achieve Grade C Certification (certificate granted 2/25/19)</li>
+					<li>Joined the platform code review group that approves all code changes made to linkedin.com</li>
+					<li>Joined the documentation review group that approves all changes made to the linkedin.com web docs</li>
+					<li>Member of the Intern Hiring Committee, the UI Engineer Interview Question Working Group, and the linkedin.com Documentation Working Group</li>
+				</ul>
+				<div class="display-flex align-items-center">
+					<a href="truecar.html" aria-label="Software Engineer at LinkedIn from July 2016 to June 2018" class="experience__title">LINKEDIN</a> 
+					<span class="experience__divider" aria-hidden="true">&nbsp; | &nbsp;</span>
+					<span class="experience__timeline" aria-hidden="true">JUL 2016 - JUN 2018</span>
 				</div>
+				<span class="experience__job-title" aria-hidden="true">SOFTWARE ENGINEER</span>
+				<ul class="experience__description serif">
+					<li>Worked on the web frontend for the redesign of the linkedin.com product (Ember, Handlebars, Sass)</li>
+					<li>Partnered with Bing to add Bing powered ads to search result pages</li>
+					<li>Worked to improve Search site speed metrics via lazy loading, occlusion culling, and prefetching</li>
+					<li>Led the CSS methodology migration to BEM for the Search team and learned lots about CSS at scale</li>
+					<li>Became an Accessibility Champion for Search by taking required courses and fixing accessibility bugs in several LinkedIn products</li>
+				</ul>
+<!-- 				<div class="experience__footer">
+					<a href="truecar.html" class="experience__link"> SEE MORE <i class="fa fa-angle-double-right"></i></a>
+				</div> -->
 			</div>
-			<div class="experience__img-container"><img class="experience__img experience__img--cooliris img-responsive" src="cooliris_sketch.png" /></div>
+			<div class="experience__img-container experience__img-container--linkedin"><img class="experience__img experience__img--linkedin img-responsive" src="linkedin.png" /></div>
 		</div>
 
-		<div class="experience display-flex align-items-center">
+		<div class="experience experience--extra-padding display-flex align-items-center">
 			<div class="experience__text">
 				<div class="display-flex align-items-center">
 					<a href="truecar.html" aria-label="UI/UX/Frontend Intern at Truecar from June 2015 to August 2015" class="experience__title">TRUECAR</a> 
@@ -106,10 +145,14 @@
 					<span class="experience__timeline" aria-hidden="true">JUN 2015 - AUG 2015</span>
 				</div>
 				<span class="experience__job-title" aria-hidden="true">UI/UX/FRONTEND INTERN</span>
-				<p class="experience__description serif">Designed and built a frontend prototype for a website where car manufacturers can view performance analytics and manage their TrueCar experience. Won the intern award for "Best Overall Execution"</p>
-				<div class="experience__footer">
+				<ul class="experience__description serif">
+					<li>Designed and built an interactive frontend prototype for a website where car manufacturers
+    can view performance analytics and manage their TrueCar experience (Ruby on Rails, Sass, HTML)</li>
+    			<li>Won the intern award for “Best Overall Execution”</li>
+    		</ul>
+<!-- 				<div class="experience__footer">
 					<a href="truecar.html" class="experience__link"> SEE MORE <i class="fa fa-angle-double-right"></i></a>
-				</div>
+				</div> -->
 			</div>
 			<div class="experience__img-container"><img class="experience__img experience__img--truecar img-responsive" src="truecar_car_color.png" /></div>
 		</div>
@@ -122,33 +165,111 @@
 					<span class="experience__timeline" aria-hidden="true">APR 2014 - SEPT 2014</span>
 				</div>
 				<span class="experience__job-title" aria-hidden="true">CSS DEVELOPER INTERN</span>
-				<p class="experience__description serif">Acquired by Yahoo in 2016, Cooliris developed photo viewing products for both mobile and web platforms. I worked on one of their products, BeamIt, where I helped style the BeamIt web application and helped build the website promoting Beamit.</p>
-				<div class="experience__footer">
+				<ul class="experience__description serif">
+					<li>Helped style and design the web application of BeamIt (Sass and Jade)
+</li>
+					<li>Helped build the promotional website for BeamIt</li>
+					<li>Cooliris was acquired by Yahoo in November of 2014</li>
+				</ul>
+				<!-- <div class="experience__footer">
 					<a href="truecar.html" class="experience__link"> SEE MORE <i class="fa fa-angle-double-right"></i></a>
-				</div>
+				</div> -->
 			</div>
 			<div class="experience__img-container"><img class="experience__img experience__img--cooliris img-responsive" src="cooliris_sketch.png" /></div>
 		</div>
 	</div>
 	
+
+
+	<a name="contact"></a>
+	<div class="section section--contact display-flex">
+		<h2 class="section__title flex-grow-1 flex-srink-0">
+			Contact
+		</h2>
+	  <div class="contact flex-grow-1">
+	    <div class="contact__item inline-flex align-items-center">
+				<i class="fa fa-envelope-o flex-shrink-0" aria-hidden="true"></i>
+				<a href="mailto:erinsinger93@gmail.com" class="flex-grow-1">
+					erinsinger93@gmail.com
+				</a>
+			</div>
+	    <div class="contact__item inline-flex align-items-center">
+				<i class="fa fa-linkedin flex-shrink-0" aria-hidden="true"></i>
+				<a href="https://www.linkedin.com/in/singererin/" class="flex-grow-1">
+					LinkedIn
+				</a>
+			</div>
+			<div class="contact__item inline-flex align-items-center">
+				<i class="fa fa-github flex-shrink-0" aria-hidden="true"></i>
+				<a href="https://github.com/erinsinger93" class="flex-grow-1">
+					erinsinger93
+				</a>
+			</div>
+			<div class="contact__item contact__item--mobile inline-flex align-items-center">
+				<i class="fa fa-mobile flex-shrink-0" aria-hidden="true"></i> 
+				<span class="flex-grow-1">
+					858-414-6008
+				</span>
+			</div>
+		</div>
+	</div>
+
 	<!-- Scripts -->
-		<script src="js/jquery.js"></script>
 		<script>
-			const TIMELINE_MARKER_WIDTH = 26;
+			const TIMELINE_MARKER_WIDTH = 266;
 			document.addEventListener('DOMContentLoaded', function() {
+				function scrollTo(element) {
+				  window.scroll({
+				    behavior: 'smooth',
+				    left: 0,
+				    top: element.offsetTop
+				  });
+				}
+
+				document.querySelector('.header__nav').addEventListener('click', (e) => {
+					if (!e.target.classList.contains('header__nav-item')) {
+						return;
+					}
+					e.preventDefault();
+					const name = e.target.getAttribute('href').substring(1);
+	    		const target = document.querySelector(`a[name="${name}"]`);
+	    		if (target) {
+				  	scrollTo(target);
+	    		}
+				});
+
+				const descriptionElems = document.querySelectorAll('.timeline__step-description');
+				let prevIdxVisible = 0;
+        
+				function updateDescription(target) {
+          const stepId = target.getAttribute('data-step-id');
+          descriptionEl = descriptionElems[parseInt(stepId, 10)];
+          descriptionElems[prevIdxVisible].classList.add('hidden');
+          setTimeout(() => {
+          	descriptionEl.classList.remove('hidden');
+          }, 500);
+          prevIdxVisible = stepId;
+				}
 
         function moveMarker(e) {
         	const target = e.target;
         	if (!target.classList.contains('timeline__indicator')) {
         		return;
         	}
-      		
+
       		const timelineXOffset = document.querySelector('.timeline').getBoundingClientRect().x;
           const indicatorBoundaries = target.getBoundingClientRect();
           const indicatorCenter = indicatorBoundaries.x - timelineXOffset + indicatorBoundaries.width/2;
           const marker = document.querySelector('.timeline__marker');
           const markerXOffset = indicatorCenter - (TIMELINE_MARKER_WIDTH / 2);
+          const currLeft = parseInt(marker.style.left.slice(0, -2));
+          if (currLeft > markerXOffset) {
+          	marker.classList.add('flipped');
+          } else {
+          	marker.classList.remove('flipped');
+          }
           marker.style.left = `${markerXOffset}px`;
+          updateDescription(target);
         }
 
 				function resetMarker() {
