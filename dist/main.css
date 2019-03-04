@@ -158,6 +158,9 @@ a {
   padding-left: 10%; }
 
 /* -------- About styling --------*/
+.about__description {
+  padding: 0 10%; }
+
 .timeline {
   width: 80%;
   position: absolute; }
