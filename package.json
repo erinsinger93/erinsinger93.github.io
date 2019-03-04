@@ -1,0 +1,29 @@
+{
+  "name": "erinsinger.com",
+  "version": "1.0.0",
+  "description": "Erin Briggs' portfolio",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erinsinger93/erinsinger93.github.io.git"
+  },
+  "author": "Erin Briggs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erinsinger93/erinsinger93.github.io/issues"
+  },
+  "homepage": "https://github.com/erinsinger93/erinsinger93.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cache": "^1.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "imagemin-pngquant": "^7.0.0"
+  }
+}
