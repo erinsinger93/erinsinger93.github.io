@@ -56,7 +56,7 @@ a {
 }
 
 .header__subtitle-and-navigation {
-	flex: 2;	
+	flex: 2;
 }
 
 .header__subtitle {
@@ -128,26 +128,26 @@ a {
 	position: relative;
 }
 
-@keyframes dragon-flying {   
-  0% {     
+@keyframes dragon-flying {
+  0% {
 		background-image: url("../dragon-up.png");
 		margin-top: -9px;
-  } 
+  }
 
-  10% {     
+  10% {
 		background-image: url("../dragon-up.png");
 		margin-top: -10px;
-  } 
+  }
 
   36% {
 		background-image: url("../dragon-mid-up.png");
 		margin-top: -13px;
-  } 
+  }
 
   63% {
 		background-image: url("../dragon-mid-down.png");
 		margin-top: -17px;
-  } 
+  }
 
   90% {
 		background-image: url("../dragon-down.png");
@@ -370,7 +370,7 @@ a {
 
 /* Media queries */
 /* Mobile */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
 	.background {
 		background: url("../watercolor-3.jpg") no-repeat center/auto 90%;
 		background-color: white;
@@ -433,21 +433,21 @@ a {
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) { 
+@media (min-width: 768px) and (max-width: 991px) {
 	.header {
 		background: url("../watercolor-3.jpg") no-repeat center/auto 100%;
 	}
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px) { 
+@media (min-width: 992px) and (max-width: 1199px) {
 
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width: 1440px) { 
+@media (min-width: 1200px) and (max-width: 1440px) {
 
-} 
+}
 
 /* Large devices (extra large desktops, 1441px and up) */
 @media (min-width: 1441px) {  }
