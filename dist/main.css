@@ -300,7 +300,8 @@ a {
 .experience__title {
   font-size: 18px;
   letter-spacing: 1px;
-  font-weight: 800; }
+  font-weight: 800;
+  margin: 0; }
 
 .experience__divider {
   -ms-flex-item-align: baseline;

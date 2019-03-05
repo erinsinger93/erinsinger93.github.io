@@ -56,7 +56,6 @@ gulp.task('deploy', ['build'], function() {
     }));
 });
 
-
 // group together all the relevant 'build' tasks for our convenience
 gulp.task('build', ['sass', 'imagemin', 'copy-lib']);
 

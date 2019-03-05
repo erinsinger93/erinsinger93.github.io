@@ -111,7 +111,7 @@
 		<div class="experience display-flex align-items-center">
 			<div class="experience__text">
 				<div class="display-flex align-items-center">
-					<a href="truecar.html" aria-label="Senior Software Engineer at LinkedIn from June 2018 to present" class="experience__title">LINKEDIN</a>
+					<h3 aria-label="Senior Software Engineer at LinkedIn from June 2018 to present" class="experience__title">LINKEDIN</h3>
 					<span class="experience__divider" aria-hidden="true">&nbsp; | &nbsp;</span>
 					<span class="experience__timeline" aria-hidden="true">JUN 2018 - PRESENT</span>
 				</div>
@@ -124,7 +124,7 @@
 					<li>Member of the Intern Hiring Committee, the UI Engineer Interview Question Working Group, and the linkedin.com Documentation Working Group</li>
 				</ul>
 				<div class="display-flex align-items-center">
-					<a href="truecar.html" aria-label="Software Engineer at LinkedIn from July 2016 to June 2018" class="experience__title">LINKEDIN</a>
+					<h3 aria-label="Software Engineer at LinkedIn from July 2016 to June 2018" class="experience__title">LINKEDIN</h3>
 					<span class="experience__divider" aria-hidden="true">&nbsp; | &nbsp;</span>
 					<span class="experience__timeline" aria-hidden="true">JUL 2016 - JUN 2018</span>
 				</div>
@@ -146,7 +146,7 @@
 		<div class="experience experience--extra-padding display-flex align-items-center">
 			<div class="experience__text">
 				<div class="display-flex align-items-center">
-					<a href="truecar.html" aria-label="UI/UX/Frontend Intern at Truecar from June 2015 to August 2015" class="experience__title">TRUECAR</a>
+					<h3 aria-label="UI/UX/Frontend Intern at Truecar from June 2015 to August 2015" class="experience__title">TRUECAR</h3>
 					<span class="experience__divider" aria-hidden="true">&nbsp; | &nbsp;</span>
 					<span class="experience__timeline" aria-hidden="true">JUN 2015 - AUG 2015</span>
 				</div>
@@ -166,7 +166,7 @@
 		<div class="experience display-flex align-items-center">
 			<div class="experience__text">
 				<div class="display-flex align-items-center">
-					<a href="truecar.html" aria-label="CSS Developer Intern at Cooliris from April 2014 to Sept 2014" class="experience__title">COOLIRIS</a>
+					<h3 aria-label="CSS Developer Intern at Cooliris from April 2014 to Sept 2014" class="experience__title">COOLIRIS</h3>
 					<span class="experience__divider" aria-hidden="true">&nbsp; | &nbsp;</span>
 					<span class="experience__timeline" aria-hidden="true">APR 2014 - SEPT 2014</span>
 				</div>
@@ -232,7 +232,7 @@
 				  });
 				}
 
-				document.querySelector('.header__nav').addEventListener('click', (e) => {
+				document.querySelector('.header__nav').addEventListener('click', function(e) {
 					if (!e.target.classList.contains('header__nav-item')) {
 						return;
 					}
@@ -251,7 +251,7 @@
           const stepId = target.getAttribute('data-step-id');
           descriptionEl = descriptionElems[parseInt(stepId, 10)];
           descriptionElems[prevIdxVisible].classList.add('hidden');
-          setTimeout(() => {
+          setTimeout(function() {
           	descriptionEl.classList.remove('hidden');
           }, 500);
           prevIdxVisible = stepId;
@@ -295,7 +295,7 @@
 					  clearTimeout(resizeTimeout);
 
 				  	// start timing for event "completion", then reset our boolean
-				  	resizeTimeout = setTimeout(() => {
+				  	resizeTimeout = setTimeout(function() {
 				  		isMarkerReset = false;
 				  	}, 250);
 					}
