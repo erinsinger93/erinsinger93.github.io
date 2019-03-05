@@ -274,13 +274,13 @@
           } else {
           	marker.classList.remove('flipped');
           }
-          marker.style.left = `${markerXOffset}px`;
+          marker.style.left = markerXOffset + 'px';
           updateDescription(target);
         }
 
 				function resetMarker() {
 					const marker = document.querySelector('.timeline__marker');
-          marker.style.left = `0`;
+          marker.style.left = '0';
           return true;
 				}
 
