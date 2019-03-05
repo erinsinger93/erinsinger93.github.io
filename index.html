@@ -263,9 +263,9 @@
         		return;
         	}
 
-      		const timelineXOffset = document.querySelector('.timeline').getBoundingClientRect().x;
+      		const timelineXOffset = document.querySelector('.timeline').getBoundingClientRect().left;
           const indicatorBoundaries = target.getBoundingClientRect();
-          const indicatorCenter = indicatorBoundaries.x - timelineXOffset + indicatorBoundaries.width/2;
+          const indicatorCenter = indicatorBoundaries.left - timelineXOffset + indicatorBoundaries.width/2;
           const marker = document.querySelector('.timeline__marker');
           const markerXOffset = indicatorCenter - (TIMELINE_MARKER_WIDTH / 2);
           const currLeft = parseInt(marker.style.left.slice(0, -2));
