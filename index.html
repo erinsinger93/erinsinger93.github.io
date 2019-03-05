@@ -11,6 +11,10 @@
 	</head>
 	<body>
 	<div class="background"></div>
+	<img src="dragon-up.png" style="display:none;" alt="" />
+	<img src="dragon-mid-up.png" style="display:none;" alt="" />
+	<img src="dragon-mid-down.png" style="display:none;" alt="" />
+	<img src="dragon-down.png" style="display:none;" alt="" />
 
 	<header class="header">
 		<div class="header__banner vertically-centered display-flex align-items-center">
@@ -25,9 +29,9 @@
 					<a href="#experience" class="header__nav-item" aria-label="Erin's work experience">
 						experience
 					</a>
-					<span class="dot" aria-hidden="true">&middot;</span>					
-					<a href="#contact" class="header__nav-item" aria-label="Contact Erin"> 
-						contact 
+					<span class="dot" aria-hidden="true">&middot;</span>
+					<a href="#contact" class="header__nav-item" aria-label="Contact Erin">
+						contact
 					</a>
 				</nav>
 			</div>
@@ -36,7 +40,7 @@
 
 	<!-- About section -->
 	<a name="about"></a>
-	<div class="section section--about">	
+	<div class="section section--about">
 		<h2 class="section__title section__title--about">
 			I've always loved creating things
 		</h2>
@@ -99,7 +103,7 @@
 
 	<!-- Experience section -->
 	<a name="experience"></a>
-	<div class="section section--experience">	
+	<div class="section section--experience">
 		<h2 class="section__title">
 			Work Experience
 		</h2>
@@ -107,7 +111,7 @@
 		<div class="experience display-flex align-items-center">
 			<div class="experience__text">
 				<div class="display-flex align-items-center">
-					<a href="truecar.html" aria-label="Senior Software Engineer at LinkedIn from June 2018 to present" class="experience__title">LINKEDIN</a> 
+					<a href="truecar.html" aria-label="Senior Software Engineer at LinkedIn from June 2018 to present" class="experience__title">LINKEDIN</a>
 					<span class="experience__divider" aria-hidden="true">&nbsp; | &nbsp;</span>
 					<span class="experience__timeline" aria-hidden="true">JUN 2018 - PRESENT</span>
 				</div>
@@ -120,7 +124,7 @@
 					<li>Member of the Intern Hiring Committee, the UI Engineer Interview Question Working Group, and the linkedin.com Documentation Working Group</li>
 				</ul>
 				<div class="display-flex align-items-center">
-					<a href="truecar.html" aria-label="Software Engineer at LinkedIn from July 2016 to June 2018" class="experience__title">LINKEDIN</a> 
+					<a href="truecar.html" aria-label="Software Engineer at LinkedIn from July 2016 to June 2018" class="experience__title">LINKEDIN</a>
 					<span class="experience__divider" aria-hidden="true">&nbsp; | &nbsp;</span>
 					<span class="experience__timeline" aria-hidden="true">JUL 2016 - JUN 2018</span>
 				</div>
@@ -142,7 +146,7 @@
 		<div class="experience experience--extra-padding display-flex align-items-center">
 			<div class="experience__text">
 				<div class="display-flex align-items-center">
-					<a href="truecar.html" aria-label="UI/UX/Frontend Intern at Truecar from June 2015 to August 2015" class="experience__title">TRUECAR</a> 
+					<a href="truecar.html" aria-label="UI/UX/Frontend Intern at Truecar from June 2015 to August 2015" class="experience__title">TRUECAR</a>
 					<span class="experience__divider" aria-hidden="true">&nbsp; | &nbsp;</span>
 					<span class="experience__timeline" aria-hidden="true">JUN 2015 - AUG 2015</span>
 				</div>
@@ -162,7 +166,7 @@
 		<div class="experience display-flex align-items-center">
 			<div class="experience__text">
 				<div class="display-flex align-items-center">
-					<a href="truecar.html" aria-label="CSS Developer Intern at Cooliris from April 2014 to Sept 2014" class="experience__title">COOLIRIS</a> 
+					<a href="truecar.html" aria-label="CSS Developer Intern at Cooliris from April 2014 to Sept 2014" class="experience__title">COOLIRIS</a>
 					<span class="experience__divider" aria-hidden="true">&nbsp; | &nbsp;</span>
 					<span class="experience__timeline" aria-hidden="true">APR 2014 - SEPT 2014</span>
 				</div>
@@ -180,7 +184,7 @@
 			<div class="experience__img-container"><img class="experience__img experience__img--cooliris img-responsive" src="cooliris_sketch.png" /></div>
 		</div>
 	</div>
-	
+
 
 
 	<a name="contact"></a>
@@ -208,7 +212,7 @@
 				</a>
 			</div>
 			<div class="contact__item contact__item--mobile inline-flex align-items-center">
-				<i class="fa fa-mobile flex-shrink-0" aria-hidden="true"></i> 
+				<i class="fa fa-mobile flex-shrink-0" aria-hidden="true"></i>
 				<span class="flex-grow-1">
 					858-414-6008
 				</span>
@@ -242,7 +246,7 @@
 
 				const descriptionElems = document.querySelectorAll('.timeline__step-description');
 				let prevIdxVisible = 0;
-        
+
 				function updateDescription(target) {
           const stepId = target.getAttribute('data-step-id');
           descriptionEl = descriptionElems[parseInt(stepId, 10)];
@@ -289,7 +293,7 @@
 					} else {
 						// clear the timeout
 					  clearTimeout(resizeTimeout);
-				  	
+
 				  	// start timing for event "completion", then reset our boolean
 				  	resizeTimeout = setTimeout(() => {
 				  		isMarkerReset = false;
