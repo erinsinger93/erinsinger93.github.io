@@ -238,7 +238,7 @@
 					}
 					e.preventDefault();
 					const name = e.target.getAttribute('href').substring(1);
-	    		const target = document.querySelector(`a[name="${name}"]`);
+	    		const target = document.querySelector('a[name="' + name +'"]');
 	    		if (target) {
 				  	scrollTo(target);
 	    		}
