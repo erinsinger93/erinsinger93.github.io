@@ -177,52 +177,46 @@ a {
   height: 300px;
   position: relative; }
 
-@-webkit-keyframes dragon-flying {
+@-webkit-keyframes dragon-bobbing {
   0% {
-    background-image: url("../dragon-up.png");
     margin-top: -9px; }
   10% {
-    background-image: url("../dragon-up.png");
     margin-top: -10px; }
   36% {
-    background-image: url("../dragon-mid-up.png");
     margin-top: -13px; }
   63% {
-    background-image: url("../dragon-mid-down.png");
     margin-top: -17px; }
   90% {
-    background-image: url("../dragon-down.png");
     margin-top: -20px; }
   100% {
-    background-image: url("../dragon-down.png");
     margin-top: -21px; } }
+
+@keyframes dragon-bobbing {
+  0% {
+    margin-top: -9px; }
+  10% {
+    margin-top: -10px; }
+  36% {
+    margin-top: -13px; }
+  63% {
+    margin-top: -17px; }
+  90% {
+    margin-top: -20px; }
+  100% {
+    margin-top: -21px; } }
+
+@-webkit-keyframes dragon-flying {
+  to {
+    background-position: -1064px; } }
 
 @keyframes dragon-flying {
-  0% {
-    background-image: url("../dragon-up.png");
-    margin-top: -9px; }
-  10% {
-    background-image: url("../dragon-up.png");
-    margin-top: -10px; }
-  36% {
-    background-image: url("../dragon-mid-up.png");
-    margin-top: -13px; }
-  63% {
-    background-image: url("../dragon-mid-down.png");
-    margin-top: -17px; }
-  90% {
-    background-image: url("../dragon-down.png");
-    margin-top: -20px; }
-  100% {
-    background-image: url("../dragon-down.png");
-    margin-top: -21px; } }
+  to {
+    background-position: -1064px; } }
 
 .dragon {
-  -webkit-animation: dragon-flying 0.3s ease-in-out infinite alternate forwards;
-          animation: dragon-flying 0.3s ease-in-out infinite alternate forwards;
-  background-size: auto 300px;
-  background-position: center;
-  background-repeat: no-repeat;
+  -webkit-animation: dragon-flying 0.3s steps(4) infinite alternate;
+          animation: dragon-flying 0.3s steps(4) infinite alternate;
+  background: url("../dragon-sprite.png") no-repeat left center/auto 294px;
   width: 100%;
   height: 100%;
   -webkit-transform: rotateY(0deg);
@@ -230,6 +224,8 @@ a {
 
 .timeline__marker {
   position: absolute;
+  -webkit-animation: dragon-bobbing 0.3s ease-in-out infinite alternate forwards;
+          animation: dragon-bobbing 0.3s ease-in-out infinite alternate forwards;
   z-index: 2;
   left: 0;
   -webkit-transition: 1.5s;
@@ -418,6 +414,10 @@ a {
     font-size: 34px; }
   .header-nav {
     font-size: 16px; }
+  .timeline__container {
+    display: none; }
+  .timeline__step-descriptions {
+    display: none; }
   .section {
     padding: 5% 5%; }
   .section--contact {
@@ -425,6 +425,8 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+  .section__title--contact {
+    margin-bottom: 0; }
   .experience {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -446,8 +448,8 @@ a {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
-  .header {
-    background: url("../watercolor-3.jpg") no-repeat center/auto 100%; } }
+  .background {
+    background: url("../watercolor-3.jpg") no-repeat center/auto 90%; } }
 
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
