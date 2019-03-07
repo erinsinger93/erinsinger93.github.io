@@ -157,6 +157,9 @@ a {
 .section__title--about {
   padding-left: 10%; }
 
+.section__title--contact {
+  padding-right: 56px; }
+
 /* -------- About styling --------*/
 .about__description {
   padding: 0 10%; }
@@ -376,23 +379,14 @@ a {
 .fa {
   width: 32px;
   height: 24px;
-  text-align: center;
-  /*	font-size: 1.2em !important;
-*/ }
+  text-align: center; }
   .fa.fa {
     font-size: 18px; }
 
 .fa-mobile {
   top: 2px; }
   .fa-mobile.fa-mobile {
-    font-size: 24px;
-    /*	margin-left: 2px;
-	font-size: 1.7em !important;
-	top: 4px;*/ }
-
-.fa-linkedin {
-  /*	margin-right: 1px;
-	margin-left: 2px;*/ }
+    font-size: 24px; }
 
 /* Media queries */
 /* Mobile */
@@ -449,7 +443,7 @@ a {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
   .background {
-    background: url("../watercolor-3.jpg") no-repeat center/auto 90%; } }
+    background: url("../watercolor-3.jpg") no-repeat top/auto 100%; } }
 
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */

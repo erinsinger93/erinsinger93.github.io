@@ -105,6 +105,10 @@ a {
 	padding-left: 10%;
 }
 
+.section__title--contact {
+	padding-right: 56px;
+}
+
 /* -------- About styling --------*/
 .about__description {
 	padding: 0 10%;
@@ -333,22 +337,13 @@ a {
 	&#{&} {
 		font-size: 18px;
 	}
-/*	font-size: 1.2em !important;
-*/}
+}
 
 .fa-mobile {
 	top: 2px;
 	&#{&} {
 		font-size: 24px;
-/*	margin-left: 2px;
-	font-size: 1.7em !important;
-	top: 4px;*/
 	}
-}
-
-.fa-linkedin {
-/*	margin-right: 1px;
-	margin-left: 2px;*/
 }
 
 /* Media queries */
@@ -430,7 +425,7 @@ a {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
 	.background {
-		background: url("../watercolor-3.jpg") no-repeat center/auto 90%;
+		background: url("../watercolor-3.jpg") no-repeat top/auto 100%;
 	}
 }
 
