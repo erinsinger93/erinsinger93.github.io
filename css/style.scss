@@ -6,7 +6,8 @@ html, body {
 
 body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	overflow: auto;
+	height: 100vh;
+	overflow: scroll;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: #333;
@@ -350,7 +351,7 @@ a {
 /* Mobile */
 @media (max-width: 768px) {
 	.background {
-		background: url("../watercolor-3.jpg") no-repeat center/auto 90vh;
+		background: url("../watercolor-3.jpg") no-repeat top/auto 90vh;
 		background-color: white;
 	}
 
@@ -425,7 +426,7 @@ a {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
 	.background {
-		background: url("../watercolor-3.jpg") no-repeat center/auto 100vh;
+		background: url("../watercolor-3.jpg") no-repeat top/100% 90vh;
 	}
 }
 
