@@ -350,7 +350,7 @@ a {
 /* Mobile */
 @media (max-width: 768px) {
 	.background {
-		background: url("../watercolor-3.jpg") no-repeat center/auto 90%;
+		background: url("../watercolor-3.jpg") no-repeat center/auto 90vh;
 		background-color: white;
 	}
 
@@ -425,7 +425,7 @@ a {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
 	.background {
-		background: url("../watercolor-3.jpg") no-repeat top/auto 100%;
+		background: url("../watercolor-3.jpg") no-repeat center/auto 100vh;
 	}
 }
 
