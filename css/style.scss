@@ -351,7 +351,7 @@ a {
 /* Mobile */
 @media (max-width: 768px) {
 	.background {
-		background: url("../watercolor-3.jpg") no-repeat top/auto 90vh;
+		background: url("../watercolor-3.jpg") no-repeat top/auto 90%;
 		background-color: white;
 	}
 
@@ -426,7 +426,13 @@ a {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
 	.background {
-		background: url("../watercolor-3.jpg") no-repeat top/100% 90vh;
+		background: url("../watercolor-3.jpg") no-repeat top/100% 90%;
+	}
+}
+
+@media only screen and (orientation: landscape) {
+	.background {
+		background: url("../watercolor-3.jpg") no-repeat top/100% 90%;
 	}
 }
 
