@@ -444,11 +444,13 @@ a {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
   .background {
-    background: url("../watercolor-3.jpg") no-repeat top/100% 90%; } }
+    background: url("../watercolor-3.jpg") no-repeat top/100% 90%;
+    background-color: white; } }
 
 @media only screen and (orientation: landscape) {
   .background {
-    background: url("../watercolor-3.jpg") no-repeat top/100% 90%; } }
+    background: url("../watercolor-3.jpg") no-repeat top/100% 90%;
+    background-color: white; } }
 
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */

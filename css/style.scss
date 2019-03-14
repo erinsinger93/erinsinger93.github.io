@@ -427,12 +427,14 @@ a {
 @media (min-width: 768px) and (max-width: 991px) {
 	.background {
 		background: url("../watercolor-3.jpg") no-repeat top/100% 90%;
+		background-color: white;
 	}
 }
 
 @media only screen and (orientation: landscape) {
 	.background {
 		background: url("../watercolor-3.jpg") no-repeat top/100% 90%;
+		background-color: white;
 	}
 }
 
