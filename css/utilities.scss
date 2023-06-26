@@ -1,0 +1,68 @@
+/* Utility classes */
+
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
+.vertically-centered {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.horizontally-centered {
+	left: 50%;
+  transform: translateX(-50%);
+}
+
+.vh-centered {
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.inline-flex {
+	display: inline-flex;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-grow-1 {
+	flex-grow: 1;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.img-responsive {
+  display: block;
+  height: auto;
+}
+
+.serif {
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+
